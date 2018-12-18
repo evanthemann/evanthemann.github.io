@@ -1,361 +1,475 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-		
-		<title>Evan L. Mann</title>
+<head>
 
-		
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<title>Evan L. Mann</title>
+
 <style>
-			.alpha {
-				border: 1px solid black; 
-				padding:15px; 
-				max-height:600px
-			  }
-			
-        /* This is the box that shows the large image */
-        #slideshow {
-            /* Style to taste */
-            width: 100%;
-            /* 75% is for a 4:3 aspect ratio, use 56.25% for 16:9 */
-            padding-bottom: 75%;
-            border: solid 1px black;
-            border-radius: 4px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-color: #1e1e1e;
-            position: relative;
-            transition: 0.5s;
-            position: relative;
-        }
 
-        /* This is for the left and right scrolling arrows */
-        #slideshow img {
-            position: absolute;
-            height: 80px;
-            opacity: .5;
-        }
+	.alpha {
+		border: 1px solid black; 
+		padding:15px; 
+		max-height:600px
+	}
 
-        /* Left scrolling arrow */
-        #slideshow img.left {
-            left: 8px;
-        }
+	/* This is the box that shows the large image */
 
-        /* Right scrolling arrow */
-        #slideshow img.right {
-            right: 8px;
-        }
+	#slideshow {
+		/* Style to taste */
+		width: 100%;
+		/* 75% is for a 4:3 aspect ratio, use 56.25% for 16:9 */
+		padding-bottom: 75%;
+		border: solid 1px black;
+		border-radius: 4px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-color: #1e1e1e;
+		position: relative;
+		transition: 0.5s;
+		position: relative;
+	}
 
-        /* Small clickable thumbnail pictures at the bottom */
-        #filmstrip {
-            height: 62px;
-            width: 80%;
-            margin: 0.5em auto;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: flex-end;
-            align-items: center;
-            overflow: hidden;
-            overflow-x: scroll;
-        }
+	/* This is for the left and right scrolling arrows */
 
-        /* Each small thumbnail image */
-        #filmstrip img {
-            display: flex;
-            height: 88%;
-            margin-right: 6px;
-        }
+	#slideshow img {
+		position: absolute;
+		height: 80px;
+		opacity: .5;
+	}
 
-        /* Highlight for thumbnail image that represents the large picture that's showing */
-        .bordered {
-            box-shadow: 0 0 4px 4px purple;
-        }
+	/* Left scrolling arrow */
 
-        /* Wide screen */
-        @media screen and (min-width: 500px) {
-            #container {
-                width: 60%;
-                margin: 1em auto;
-            }
-            #slideshow img {
-                top: 45%;
-            }
-        }
+	#slideshow img.left {
+		left: 8px;
+	}
 
-        /* Narrow screen */
-        @media screen and (max-width: 499px) {
-            #container {
-                width: 90%;
-                margin: 0 auto;
-            }
-            #slideshow img {
-                top: 30%;
-            }
-        }
-			
+	/* Right scrolling arrow */
+	
+	#slideshow img.right {
+		right: 8px;
+	}
 
-			
-			
-        /* All elements inside the nav */
-        nav * {
-            margin: 0;
-            padding: 0;
-            font-family: Verdana, Tahoma, Sans-Serif;
-        }
+	/* Small clickable thumbnail pictures at the bottom */
+	
+	#filmstrip {
+		height: 62px;
+		width: 80%;
+		margin: 0.5em auto;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-end;
+		align-items: center;
+		overflow: hidden;
+		overflow-x: scroll;
+	}
 
-        /* nav element, size and color however you like */
-        nav {
-            height: 48px;
-            line-height: 48px;
-            width: 100%;
-            background-color: #146497;
-            color: White;
-            display: block;
-        }
-            /* All link in the nav, size and color how you want */
-            nav a {
-                color: white;
-                text-decoration: none;
-            }
+	/* Each small thumbnail image */
 
-            /* Horizontal menu  */
-            nav ul {
-                margin: 0;
-                list-style-type: none;
-                padding: 0;
-            }
+	#filmstrip img {
+		display: flex;
+		height: 88%;
+		margin-right: 6px;
+	}
 
-                /* Each item on the top horizontal menu */
-                nav ul li {
-                    float: left;
-                    position: relative;
-                }
+	/* Highlight for thumbnail image that represents the large picture that's showing */
 
-                    /* Text on the horzontal menu */
-                    nav ul li span,
-                    nav ul li a {
-                        display: block;
-                        height: 100%;
-                        padding: 0 20px;
-                    }
+	.bordered {
+		box-shadow: 0 0 4px 4px purple;
+	}
 
-                /* Dropdown meny styling, style to taste */
-                nav ul ul {
-                    margin: 0;
-                    padding: 0;
-                    display: none;
-                    position: absolute;
-                    left: 0;
-                    width: 200px;
-                    background-color: #0c648d;
-                    list-style-type: none;
-                    z-index: 10;
-                }
+	/* Wide screen */
 
-                /* Dropdown menu items. */
-                nav ul li ul li {
-                    float: left;
-                    position: relative;
-                    text-align: left;
-                }
+	@media screen and (min-width: 500px) {
+		#container {
+			width: 60%;
+			margin: 1em auto;
+		}
+		#slideshow img {
+			top: 45%;
+		}
+	}
 
-            /* Hover color to text across top and items on the dropdown menus */
-            nav li span:hover,
-            nav li a:hover {
-                color: #ff0;
-                cursor: pointer;
-                background-color: #538cb7;
-            }
+	/* Narrow screen */
 
-            /* Hover style for the items on the dropdown menu*/
-            nav ul ul span:hover {
-                text-decoration: underline;
-            }
+	@media screen and (max-width: 499px) {
+		#container {
+			width: 90%;
+			margin: 0 auto;
+		}
+		#slideshow img {
+			top: 30%;
+		}
+	}
 
-            nav ul ul li {
-                width: 100%;
-                margin-left: 0px;
-                height: 48px;
-            }
+	/* All elements inside the nav */
 
-            nav ul ul span,
-            nav ul ul a {
-                display: block;
-                color: #f2f2f2;
-                padding-left: 1em;
-                height: 42px;
-                line-height: 42px;
-                cursor: pointer;
-            }
+	nav * {
+		margin: 0;
+		padding: 0;
+		font-family: Verdana, Tahoma, Sans-Serif;
+	}
 
-                nav ul ul span:hover {
-                    background-color: #538cb7;
-                }
-			
-			
-			
-			
+	/* nav element, size and color however you like */
+
+	nav {
+		height: 48px;
+		line-height: 48px;
+		width: 100%;
+		background-color: #146497;
+		color: White;
+		display: block;
+	}
+
+	/* All link in the nav, size and color how you want */
+
+	nav a {
+		color: white;
+		text-decoration: none;
+	}
+
+	/* Horizontal menu  */
+
+	nav ul {
+		margin: 0;
+		list-style-type: none;
+		padding: 0;
+	}
+
+	/* Each item on the top horizontal menu */
+	
+	nav ul li {
+		float: left;
+		position: relative;
+	}
+
+	/* Text on the horzontal menu */
+
+	nav ul li span,
+	nav ul li a {
+		display: block;
+		height: 100%;
+		padding: 0 20px;
+	}
+
+	/* Dropdown menu styling, style to taste */
+
+	nav ul ul {
+		margin: 0;
+		padding: 0;
+		display: none;
+		position: absolute;
+		left: 0;
+		width: 200px;
+		background-color: #0c648d;
+		list-style-type: none;
+		z-index: 10;
+	}
+
+	/* Dropdown menu items. */
+
+	nav ul li ul li {
+		float: left;
+		position: relative;
+		text-align: left;
+	}
+
+	/* Hover color to text across top and items on the dropdown menus */
+	
+	nav li span:hover,
+	nav li a:hover {
+		color: #ff0;
+		cursor: pointer;
+		background-color: #538cb7;
+	}
+
+	/* Hover style for the items on the dropdown menu*/
+
+	nav ul ul span:hover {
+		text-decoration: underline;
+	}
+
+	nav ul ul li {
+		width: 100%;
+		margin-left: 0px;
+		height: 48px;
+	}
+
+	nav ul ul span,
+	nav ul ul a {
+		display: block;
+		color: #f2f2f2;
+		padding-left: 1em;
+		height: 42px;
+		line-height: 42px;
+		cursor: pointer;
+	}
+
+	nav ul ul span:hover {
+		background-color: #538cb7;
+	}
+
 </style>
-			
-		
-		
+
+
+
 <script>
-			function info() {
-				alert("This website is under construction. Stay tuned for updates.");
+
+	function info() {
+		alert("This website is under construction. Stay tuned for updates.");
+	}
+
+	//jQuery code for clickable dropdown menus.
+
+	$(document).ready(function () {
+	
+		//Hides all visible dropdown menus.
+	
+		function hideall() {
+			$('nav ul li ul').hide();
+		}
+
+		//When clicking anywhere on the page, hide all dropdown menus.
+
+		$('html').bind("click touchstart", function () {
+			hideall()
+		});
+
+		//User clicked on a top menu bar item.
+
+		$('nav ul li').click(function (e) {
+
+			//Is dropdown already hidden?
+
+			var hidden = $("ul", this).is(":hidden")
+	
+			//Hide all dropdown menus.
+
+			hideall()
+
+			//If it was hidden already, show it.
+
+			if (hidden) {
+
+				$("ul", this).slideDown("fast");
+
 			}
-			
-			
-        //jQuery code for clickable dropdown menus.
-        $(document).ready(function () {
-            //Hides all visible dropdown menus.
-            function hideall() {
-                $('nav ul li ul').hide();
-            }
 
-            //When clicking anywhere on the page, hide all dropdown menus.
-            $('html').bind("click touchstart", function () {
-                hideall()
-            });
+			//Don't do html.click to hide all menus.
 
-            //User clicked on a top menu bar item.
-            $('nav ul li').click(function (e) {
-                //Is dropdown already hidden?
-                var hidden = $("ul", this).is(":hidden")
-                //Hide all dropdown menus.
-                hideall()
-                //If it was hidden already, show it.
-                if (hidden) {
-                    $("ul", this).slideDown("fast");
-                }
-                //Don't do html.click to hide all menus.
-                e.stopPropagation()
-            });
+			e.stopPropagation()
 
-            $('a').bind("click touchstart", function (e) {
-                e.stopPropagation()
-            });
-        });
-			
-			
-		</script>
-	</head>
+		});
+
+		$('a').bind("click touchstart", function (e) {
+
+			e.stopPropagation()
+
+		});
+
+	});
+
+</script>
+
+
+
+</head>
+
+
+
 <body>
-	 <h1 style="margin-top:0">Clickable Dropdown Menus</h1>
-	    <!-- ====================================================================================== Horizontal menu bar -->
-	    <nav>
-		<ul>
-		    <li><a href="index.html"> Home</a></li>
-		    <li>
-			<span>
-			    Top 1
-			</span>
-			<ul>
-			    <li><a href="index.html">Drop 1-1 </a></li>
-			    <li><a href="index.html">Drop 1-2 </a></li>
-			    <li><a href="index.html">Drop 1-3 </a></li>
-			    <li><a href="index.html">Drop 1-4 </a></li>
-			</ul>
-		    </li>
-		    <li>
-			<span>
-			    Top 2
-			</span>
-			<ul>
-			    <li><a href="index.html">Drop 2-1 </a></li>
-			    <li><a href="index.html">Drop 2-2 </a></li>
-			</ul>
-		    </li>
-		</ul>
-	    </nav>
-	
-	
-	
-	
-	<div class=alpha>	
-		<h2>Hello world. This is my website.</h1>
-		<hr>
-		<p>My name is Evan Mann. I am passionate about multimedia, technology, communication and marketing. Currently I work for SAS Institute as an Associate Communications Specialist in the Internal Communications department. My main day-to-day responsibility is editing videos for internal use. These videos are usually interviews, department updates, instructional videos, event coverage, or creative narrative videos.</p>	
-		<input type="button" value="Click me" onclick="info()">
-	</div>
-	
 
-	
-	
-	
-	
+	<h1 style="margin-top:0">Clickable Dropdown Menus</h1>
+
+	<!-- ====================================================================================== Horizontal menu bar -->
+
+	<nav>
+
+		<ul>
+
+			<li><a href="index.html"> Home</a></li>
+
+			<li>
+
+				<span>
+
+					Top 1
+
+				</span>
+
+				<ul>
+
+					<li><a href="index.html">Drop 1-1 </a></li>
+
+					<li><a href="index.html">Drop 1-2 </a></li>
+
+					<li><a href="index.html">Drop 1-3 </a></li>
+
+					<li><a href="index.html">Drop 1-4 </a></li>
+
+				</ul>
+
+			</li>
+
+			<li>
+
+				<span>
+
+					Top 2
+
+				</span>
+
+				<ul>
+
+					<li><a href="index.html">Drop 2-1 </a></li>
+
+					<li><a href="index.html">Drop 2-2 </a></li>
+
+				</ul>
+
+			</li>
+
+		</ul>
+
+	</nav>
+
+	<div class=alpha>
+
+		<h2>Hello world. This is my website.</h1>
+
+		<hr>
+
+		<p>My name is Evan Mann. I am passionate about multimedia, technology, communication and marketing. Currently I work for SAS Institute as an Associate Communications Specialist in the Internal Communications department. My main day-to-day responsibility is editing videos for internal use. These videos are usually interviews, department updates, instructional videos, event coverage, or creative narrative videos.</p>	
+
+		<input type="button" value="Click me" onclick="info()">
+
+	</div>
+
 	<div id="container">
-        <!-- Large image with scrolling arrows-->
-        <div id="slideshow">
-            <img src="left.png" class="left" alt="left" title="left" onclick="slide(-1)">
-            <img src="right.png" class="right" alt="right" title="right" onclick="slide(1)">
-        </div>
-        <!-- Small thumbnail images -->
-        <div id="filmstrip"></div>
-    	</div>
-	
-	
-	
-	
-	
-	
-	
-	
-    <!-- Put this code near the bottom of the page, just before the closing /body tag -->
-    <script>
-        //For this to work, images must be named img01.jpg, img02.jpg, img03.jpg...img10.jpg, img11.jpg
-        //with no breaks in the sequence. And number_of_image has to be accurate indicating the highest
-        //number.  The images folder must be a child folder to the folder that contains the page with this code.
-        var number_of_images = 18;
-        var images_folder = 'slides';
-        var thisimage = '';
-        // Creates the thumbnail images inside filmstrip.
-        for (i = 1; i <= number_of_images; i++) {
-            thisimage = images_folder + '/img' + ('0' + i.toString()).slice(-2) + ".jpg";
-            document.getElementById('slideshow').style.backgroundImage = "url('" + thisimage; + "')";
-            document.getElementById('filmstrip').innerHTML += "<img src='" + thisimage + "' onclick='show(" + i + ")'>"
-            //Go to first image
-            show(1);
-        }
-        //Calls the show function when a left or right scrolling arrow is clicked.
-        function slide(x) {
-            //Determing the number of the image currently showing (before they clicked a scroll arrow)
-            var currentimage = document.getElementById('slideshow').style.backgroundImage.split('.jpg');
-            var i = parseInt(currentimage[0].slice(-2)) + x;
-            //If they tried to scroll past the last image, loop around to the first.
-            i = i > number_of_images ? 1 : i;
-            //If they tried to scroll past the first image, loop around to the last.
-            i = i < 1 ? number_of_images : i;
-            show(i);
-        }
-        //Show the image (the i indicates the XX in the imgXX.jpg file name.)
-        function show(i) {
-            thisimage = images_folder + '/img' + ('0' + i.toString()).slice(-2) + ".jpg";
-            document.getElementById('slideshow').style.backgroundImage = "url('" + thisimage; + "')"
-            //Loop through thumbnail images, border only the current one.
-            var filmstrip = document.getElementById("filmstrip");
-            var thumbs = filmstrip.getElementsByTagName("img");
-            for (x = 0; x < thumbs.length; x++) {
-                if (x == i - 1) {
-                    thumbs[x].className = 'bordered';
-                } else {
-                    thumbs[x].className = '';
-                }
-            }
-            //Decide which third of the thumbnails to show based on position of current pic.
-            filmstrip.style.justifyContent = 'center';
-            if (i <= number_of_images / 3) {
-                filmstrip.style.justifyContent = 'flex-start';
-            }
-            if (i >= number_of_images - (number_of_images / 3)) {
-                filmstrip.style.justifyContent = 'flex-end';
-            }
-        }
-    </script>
-	
+
+		<!-- Large image with scrolling arrows-->
+
+		<div id="slideshow">
+
+			<img src="left.png" class="left" alt="left" title="left" onclick="slide(-1)">
+
+			<img src="right.png" class="right" alt="right" title="right" onclick="slide(1)">
+
+		</div>
+
+		<!-- Small thumbnail images -->
+
+		<div id="filmstrip"></div>
+
+	</div>
+
+	<!-- Put this code near the bottom of the page, just before the closing /body tag -->
+
+	<script>
+
+		//For this to work, images must be named img01.jpg, img02.jpg, img03.jpg...img10.jpg, img11.jpg
+
+		//with no breaks in the sequence. And number_of_image has to be accurate indicating the highest
+
+		//number.  The images folder must be a child folder to the folder that contains the page with this code.
+
+		var number_of_images = 18;
+
+		var images_folder = 'slides';
+
+		var thisimage = '';
+
+		// Creates the thumbnail images inside filmstrip.
+
+		for (i = 1; i <= number_of_images; i++) {
+
+			thisimage = images_folder + '/img' + ('0' + i.toString()).slice(-2) + ".jpg";
+
+			document.getElementById('slideshow').style.backgroundImage = "url('" + thisimage; + "')";
+
+			document.getElementById('filmstrip').innerHTML += "<img src='" + thisimage + "' onclick='show(" + i + ")'>"
+
+			//Go to first image
+
+			show(1);
+
+		}
+
+		//Calls the show function when a left or right scrolling arrow is clicked.
+
+		function slide(x) {
+
+			//Determing the number of the image currently showing (before they clicked a scroll arrow)
+
+			var currentimage = document.getElementById('slideshow').style.backgroundImage.split('.jpg');
+
+			var i = parseInt(currentimage[0].slice(-2)) + x;
+
+			//If they tried to scroll past the last image, loop around to the first.
+
+			i = i > number_of_images ? 1 : i;
+
+			//If they tried to scroll past the first image, loop around to the last.
+
+			i = i < 1 ? number_of_images : i;
+
+			show(i);
+
+		}
+
+		//Show the image (the i indicates the XX in the imgXX.jpg file name.)
+
+		function show(i) {
+
+			thisimage = images_folder + '/img' + ('0' + i.toString()).slice(-2) + ".jpg";
+
+			document.getElementById('slideshow').style.backgroundImage = "url('" + thisimage; + "')"
+
+			//Loop through thumbnail images, border only the current one.
+
+			var filmstrip = document.getElementById("filmstrip");
+
+			var thumbs = filmstrip.getElementsByTagName("img");
+
+			for (x = 0; x < thumbs.length; x++) {
+
+				if (x == i - 1) {
+
+					thumbs[x].className = 'bordered';
+
+				} else {
+
+					thumbs[x].className = '';
+
+				}
+
+			}
+
+			//Decide which third of the thumbnails to show based on position of current pic.
+
+			filmstrip.style.justifyContent = 'center';
+
+			if (i <= number_of_images / 3) {
+
+				filmstrip.style.justifyContent = 'flex-start';
+
+			}
+
+			if (i >= number_of_images - (number_of_images / 3)) {
+
+				filmstrip.style.justifyContent = 'flex-end';
+
+			}
+
+		}
+
+	</script>
+
 </body>
+
 </html>
