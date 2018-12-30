@@ -10,63 +10,7 @@
 
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 
-<script>
 
-	function info() {
-		alert("This website is under construction. Stay tuned for updates.");
-	}
-
-	//jQuery code for clickable dropdown menus.
-
-	$(document).ready(function () {
-	
-		//Hides all visible dropdown menus.
-	
-		function hideall() {
-			$('nav ul li ul').hide();
-		}
-
-		//When clicking anywhere on the page, hide all dropdown menus.
-
-		$('html').bind("click touchstart", function () {
-			hideall()
-		});
-
-		//User clicked on a top menu bar item.
-
-		$('nav ul li').click(function (e) {
-
-			//Is dropdown already hidden?
-
-			var hidden = $("ul", this).is(":hidden")
-	
-			//Hide all dropdown menus.
-
-			hideall()
-
-			//If it was hidden already, show it.
-
-			if (hidden) {
-
-				$("ul", this).slideDown("fast");
-
-			}
-
-			//Don't do html.click to hide all menus.
-
-			e.stopPropagation()
-
-		});
-
-		$('a').bind("click touchstart", function (e) {
-
-			e.stopPropagation()
-
-		});
-
-	});
-
-</script>
 
 
 
@@ -75,38 +19,6 @@
 
 
 <body>
-
-	<!-- ====================================================================================== Horizontal menu bar -->
-
-	<nav>
-
-		<ul>
-
-			<li><a href="index.html">Home</a></li>
-
-			<li><a href="photos.html">Photos</a></li>
-			
-			<li><a href="music.html">Music</a></li>
-			
-			<li><a href="videos.html">Videos</a></li>
-
-			<li><a href="contact.html">Contact</a></li>
-
-		</ul>
-
-	</nav>
-
-	<div class=alpha>
-
-		<h2>Hello world. This is my website.</h1>
-
-		<hr>
-
-		<p>My name is Evan Mann. I am passionate about multimedia, technology, communication and marketing. Currently I work for SAS Institute as an Associate Communications Specialist in the Internal Communications department. My main day-to-day responsibility is editing videos for internal use. These videos are usually interviews, department updates, instructional videos, event coverage, or creative narrative videos. I also manage a few internal websites and project manage some department campaigns.</p>	
-
-		<input type="button" value="Click me" onclick="info()">
-
-	</div>
 
 
 </body>
