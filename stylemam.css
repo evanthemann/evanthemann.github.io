@@ -1,0 +1,33 @@
+.movie {
+  background-color: lightgrey;
+  width: 200px;
+  height: 200px;
+  float: left;
+  padding: 10px;
+  margin: 10px;
+}
+
+h1, p {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.movie:hover {
+  background-color: lightgreen;
+}
+
+.gif {
+  background-color: white;
+  width: 180px;
+  height: 135px;
+  margin: auto;
+}
+
+.intro {
+    padding: 0px 50px;
+}
+
+
+html {
+  background-color: ;
+}
