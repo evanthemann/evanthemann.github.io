@@ -37,16 +37,13 @@ img {
 
 
 
-#img1 {display:block;}
-#img2 {display:none}
 
 
 
 @media only screen and (max-width: 600px) {
   body {
+    background-color: lightblue;
   }
-  #img1 {display: none;}
-  #img2 {display: block;}
 
 
 }
