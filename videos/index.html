@@ -1,52 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>jQuery Show Hide Elements Using Select Box</title>
-    <style>
-        .box{
-            color: #fff;
-            padding: 20px;
-            display: none;
-            margin-top: 20px;
-        }
-        .red{ background: #ff0000; }
-        .green{ background: #228B22; }
-        .blue{ background: #0000ff; }
-    </style>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script>
-    $(document).ready(function(){
-        $("select").change(function(){
-            $(this).find("option:selected").each(function(){
-                var optionValue = $(this).attr("value");
-                if(optionValue){
-                    $(".box").not("." + optionValue).hide();
-                    $("." + optionValue).show();
-                } else{
-                    $(".box").hide();
-                }
-            });
-        }).change();
-    });
-    </script>
-</head>
+<html>
+  <style>
+    .filterDiv {
+      float: left;
+      background-color: #2196F3;
+      color: #ffffff;
+      width: 320px;
+      height: 180px;
+      text-align: center;
+      margin: 2px;
+      display: none;
+    }
+
+    .filterDiv:hover {
+
+      background-color: #222222;
+
+    }
+
+    .show {
+      display: block;
+    }
+
+    .container {
+      margin-top: 20px;
+      overflow: hidden;
+    }
+
+    /* Style the buttons */
+    .btn {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #ddd;
+    }
+
+    .btn.active {
+      background-color: #666;
+      color: white;
+    }
+
+    h2 {
+      font-family: sans-serif;
+    }
+  </style>
 <body>
-    <div>
-        <select>
-            <option>Choose category</option>
-            <option value="red">Music videos</option>
-            <option value="green">Business videos</option>
-            <option value="blue">SAS videos</option>
-            <option value="blue">Tutorials</option>
-            <option value="blue">Short films</option>
-            <option value="blue">Weddings</option>
-            <option value="blue">Interviews</option>
-            <option value="blue">Church</option>
-        </select>
-    </div>
-    <div class="red box">You have selected <strong>red option</strong> so i am here</div>
-    <div class="green box">You have selected <strong>green option</strong> so i am here</div>
-    <div class="blue box">You have selected <strong>blue option</strong> so i am here</div>
+
+<h2>Evan L. Mann videos</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('music videos')">Music videos</button>
+  <button class="btn" onclick="filterSelection('business videos')">Business videos</button>
+  <button class="btn" onclick="filterSelection('sas videos')">SAS videos</button>
+  <button class="btn" onclick="filterSelection('tutorials')">Tutorials</button>
+  <button class="btn" onclick="filterSelection('short films')">Short films</button>
+  <button class="btn" onclick="filterSelection('weddings')">Weddings</button>
+  <button class="btn" onclick="filterSelection('interviews')">Interviews</button>
+  <button class="btn" onclick="filterSelection('church')">Church</button>
+  <button class="btn" onclick="filterSelection('volunteer')">Volunteer</button>
+  <button class="btn" onclick="filterSelection('sports')">Sports</button>
+  <button class="btn" onclick="filterSelection('misc')">Misc</button>
+</div>
+
+<div class="container">
+  <div class="filterDiv church">Mother's Day<br>
+    <video width="160" height="120" controls controlsList="nodownload">
+      <source src="https://www.dropbox.com/s/faiq9c33ak67n6e/2019_1oC_MothersDay.mp4?raw=1" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="filterDiv music videos ">Soul-o<br>
+    <video width="160" height="120" controls controlsList="nodownload">
+      <source src="https://www.dropbox.com/s/3vm1f5gqrx5seaa/SoulO_compressed.mp4?raw=1" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="filterDiv business videos">Pilot Mtn Arms<br>
+    <video width="160" height="120" controls controlsList="nodownload">
+      <source src="https://www.dropbox.com/s/ucluihy8q4kk081/PilotMountainArms_compressed.mp4?raw=1" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="filterDiv business videos sas videos">Stratux<br>
+    <video width="160" height="120" controls controlsList="nodownload">
+      <source src="https://www.dropbox.com/s/1fptirehrp2sd92/StratuxInTheSky_compressed.mp4?raw=1" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="filterDiv weddings">Halk/Burkey<br>
+    <video width="160" height="120" controls controlsList="nodownload">
+      <source src="https://www.dropbox.com/s/f2gnvo0wg6wjeqx/HalkBurkeyWedding_compressed.mp4?raw=1" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="filterDiv weddings">Claire/Matt<br>
+    <video width="160" height="120" controls controlsList="nodownload">
+      <source src="https://www.dropbox.com/s/sf5y3ch3g8wzz52/ClaireMatt_compressed.mp4?raw=1" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="filterDiv weddings">Kayla/Tyler<br>
+    <video width="160" height="120" controls controlsList="nodownload">
+      <source src="https://www.dropbox.com/s/ms6rlbigv926p96/KaylaWedding_compressed.mp4?raw=1" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="filterDiv business videos">Polar Hockey<br>
+    <video width="160" height="120" controls controlsList="nodownload">
+      <source src="https://www.dropbox.com/s/0u7mp4in3fmcsy5/PolarIceHouseYouthLeague_compressed.mp4?raw=1" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="filterDiv business videos volunteer">LLS flash mob<br>
+    <video width="160" height="120" controls controlsList="nodownload">
+      <source src="https://www.dropbox.com/s/nwpsgi6nagomai2/TeamBeatItforLLSFlashMob.mp4?raw=1" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="filterDiv business videos volunteer">LLS on news<br>
+    <video width="160" height="120" controls controlsList="nodownload">
+      <source src="https://www.dropbox.com/s/qzmaugld50965qb/FlashMobABC11_compressed.mp4?raw=1" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="filterDiv business videos volunteer">Derby Day<br>
+    <video width="160" height="120" controls controlsList="nodownload">
+      <source src="https://www.dropbox.com/s/b4g28yfr2c4a15a/CA_DerbyDay_compressed.mp4?raw=1" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="filterDiv sports">Randomosity<br>
+    <video width="160" height="120" controls controlsList="nodownload">
+      <source src="https://www.dropbox.com/s/q32hds4dc45w2zu/randomosity_compressed.mp4?raw=1" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="filterDiv sports">poop<br>
+    <video width="160" height="120" controls controlsList="nodownload">
+      <source src="https://www.dropbox.com/s/bip3kd87hpzjowi/poop_compressed.mp4?raw=1" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
 </body>
 </html>
