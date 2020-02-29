@@ -1,57 +1,75 @@
 <!DOCTYPE html>
 <html>
-  <style>
-    .filterDiv {
-      float: left;
-      background-color: #2196F3;
-      color: #ffffff;
-      width: 320px;
-      height: 180px;
-      text-align: center;
-      margin: 2px;
-      display: none;
-    }
+<head>
 
-    .filterDiv:hover {
 
-      background-color: #222222;
-
-    }
-
-    .show {
-      display: block;
-    }
-
-    .container {
-      margin-top: 20px;
-      overflow: hidden;
-    }
-
-    /* Style the buttons */
-    .btn {
-      border: none;
-      outline: none;
-      padding: 12px 16px;
-      background-color: #f1f1f1;
-      cursor: pointer;
-    }
-
-    .btn:hover {
-      background-color: #ddd;
-    }
-
-    .btn.active {
-      background-color: #666;
-      color: white;
-    }
-
-    h2 {
-      font-family: sans-serif;
-    }
-  </style>
+      <title>Videos</title>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="css/master.css">
+    </head>
 <body>
 
-<h2>Evan L. Mann videos</h2>
+
+<div class="w3-container">
+
+  <h2 style="font-family: monospace">Evan L. Mann videos</h2>
+
+  <div class="w3-container">
+
+
+<!-- MODAL 1 : MOTHERS DAY -->
+
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+          <!-- video file -->
+            <p><video width="160" height="120" controls controlsList="nodownload" poster="https://ucb89813269be6d4103e3325702a.previews.dropboxusercontent.com/p/thumb/AAtiP0mKVD_PRDHsAfC5RylhdJL4KHZ9gl-Siqnv0C8TuFfefgLdTzf1JdaaJi7voYd2hN8JPlvTFtkZneX3eG_88qA1IALOfTNJLa01eg3piN7sub1MUNX7Gj3YVIRefVLlTCMuqlPp4vjvh8qGxNeSpS9H8uFaeBkkiQYYhASNIgXI4N-VarSbirQEh1d2Zb-48YQiYz39rMJHNJDJEo1MtZuyy6m5QQQJ0dfYIYEUxNrhV-2uPtIkaDm0HFoVilG8J7EfoxYMDNJGlk8akao0LPCnl86jftNwE8loruAEsVNgQx2PPLSk48hAE246Pg0vVHxJ6K0vEt5mqVGgtru2OT017huuNrdQO9l9GfZdr5MknUtEY01qv291zsbs9cqjnUjz7GZUxn5rVOltArp8N7olpTyuuR3QN-YoCl1kXwxKRRednyLntE7pPHZfViF3zwSz0qd8YzCJ5M51r345v80AEKyFi8FeQer2cDWFiYukZ05kc3WxrTKgEMMCHZBMcHx3hM2Hx_8b5kMILPq3QJNMciOOQV_rR7bLqb6QnlWTB96FKQ5W5WK9ARhxL4LX-SouStN6w8Btrd9opmVF_99NaiPHbk4NX393JXcaGMZq7Fkkvoe6Akcps_VwLQ--9uCIgQsgiDdT-0rYvWa2/p.jpeg">
+              <source src="https://www.dropbox.com/s/faiq9c33ak67n6e/2019_1oC_MothersDay.mp4?raw=1" type="video/mp4">
+                Your browser does not support the video tag.
+            </video></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2 : SOUL-O -->
+
+      <div id="id02" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <!-- video file -->
+              <p>
+                <video width="160" height="120" controls controlsList="nodownload" poster="https://uc1a9d60b17947d3c20ed3af722a.previews.dropboxusercontent.com/p/thumb/AAvFpW2mjmFRC5pqpBZoA2NKC5XJ0zbiNrET1NT5EpK326mllipZ5CRS932cTuL6YbZvncXIsjq1aXmEy26980u8oYfqmkwitDqAZVP7tGL-W1DzewZjZ2fhn57Yo9U2k4n9gtYnYlD4HPXfmAdQhVMJUbrTjhZEmGcTFpNT8ApBRC6klCcxDTPKPLyROPOwg9kHlfcRnI9hr5e5tc6DSQJwAkUCaNNyJLyDMFImeGgEwigx8v8QoNta1hf1TAibnuxCsZt0dYLirfeef0u1q9da1g9YIGuWBVwOosDPhnVfpYllqANOCV3ieu-ulWVOXq-NSvtw0Cul83tMfeonBHORLR37Q7HvQZ2NHzbiZMb6ITAxSz6L-bBgLoFFJ-tf0XblRF_7YYXjicZfJ1csHgFp_FWZqS5KMawm8jKpWGG9lJeTNK2BvhH_it0hF0J0t8Imu9I86jN-lFZ7jQUNjOwPvEqi_iFu-tO51CQmM1P0MaEuZ8IIM3jC1sI0qZm9ASzeBiiwwaILW9njFEflHj8P/p.jpeg">
+                  <source src="https://www.dropbox.com/s/3vm1f5gqrx5seaa/SoulO_compressed.mp4?raw=1" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 3 : Pilot mtn arms -->
+
+        <div id="id03" class="w3-modal">
+          <div class="w3-modal-content">
+            <div class="w3-container">
+              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+              <!-- video file -->
+                <p>
+                  <video width="160" height="120" controls controlsList="nodownload" poster="https://uca244ad44e86422a247355fffdb.previews.dropboxusercontent.com/p/thumb/AAv_2ONw1GYI0qNGP4wi282tw3zDn2DGig5remeiDhg3kDfq4goLzIIDRjZVI1Op3LAp3b29XYt9FISd835m6JD-If5w3nK-9DNEZEch1tHzK-KxyEYJS1wFaNdPnzVHslczlxfQKaCXF-z6COtv6qk5r7NAruHYW_q0ONc0tLCjLhj_od5_wHuWwOh2A_vFEe_CYEmii2E7PCtqCMCHOYXSId5rK-97rHmES2sqK9NRRWsY5r55nTQFw78sQ1v-DpvALI7JqLGsnwvQnZ94u0nmpG9q2Z9Tyv-jBUtLiGZ07d9OxNfgV7YV04ih3H57leAbRV9AT0ciol3L1ORuXvT1ByCYWKOjNAfNZ2Ien4wGtZv8-mZUO73HNUYSQrnt2YKO-mLLfwYiKKPjq2K0UzxhMpWfDbm4Qz5rOEbWmhS2hgs4-3natKjksxMgzUWgEK_fer4gd1nhz6Hu0fGV5kxWQlX2GcTkh6DHdegRB642hU6buoAYxzBKAceYvxnVSzPG_H5_ex5FbKf4v11VC_W6KwodXlV5kHgXbrBggpTGMkbTc8ss5AXqVX-HQqZynOgHMfljBnSi-9L5H2np4L5o/p.jpeg">
+                    <source src="https://www.dropbox.com/s/ucluihy8q4kk081/PilotMountainArms_compressed.mp4?raw=1" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<div class="w3-container">
 
 <div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
@@ -68,97 +86,202 @@
   <button class="btn" onclick="filterSelection('misc')">Misc</button>
 </div>
 
-<div class="container">
-  <div class="filterDiv church">Mother's Day<br>
-    <video width="160" height="120" controls controlsList="nodownload" poster="https://ucb89813269be6d4103e3325702a.previews.dropboxusercontent.com/p/thumb/AAtiP0mKVD_PRDHsAfC5RylhdJL4KHZ9gl-Siqnv0C8TuFfefgLdTzf1JdaaJi7voYd2hN8JPlvTFtkZneX3eG_88qA1IALOfTNJLa01eg3piN7sub1MUNX7Gj3YVIRefVLlTCMuqlPp4vjvh8qGxNeSpS9H8uFaeBkkiQYYhASNIgXI4N-VarSbirQEh1d2Zb-48YQiYz39rMJHNJDJEo1MtZuyy6m5QQQJ0dfYIYEUxNrhV-2uPtIkaDm0HFoVilG8J7EfoxYMDNJGlk8akao0LPCnl86jftNwE8loruAEsVNgQx2PPLSk48hAE246Pg0vVHxJ6K0vEt5mqVGgtru2OT017huuNrdQO9l9GfZdr5MknUtEY01qv291zsbs9cqjnUjz7GZUxn5rVOltArp8N7olpTyuuR3QN-YoCl1kXwxKRRednyLntE7pPHZfViF3zwSz0qd8YzCJ5M51r345v80AEKyFi8FeQer2cDWFiYukZ05kc3WxrTKgEMMCHZBMcHx3hM2Hx_8b5kMILPq3QJNMciOOQV_rR7bLqb6QnlWTB96FKQ5W5WK9ARhxL4LX-SouStN6w8Btrd9opmVF_99NaiPHbk4NX393JXcaGMZq7Fkkvoe6Akcps_VwLQ--9uCIgQsgiDdT-0rYvWa2/p.jpeg">
-      <source src="https://www.dropbox.com/s/faiq9c33ak67n6e/2019_1oC_MothersDay.mp4?raw=1" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-  </div>
+</div>
+
+
+<div class="w3-container">
+
+
+          <div class="filterDiv church" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Mother's Day<br>
+        <img src="https://ucb89813269be6d4103e3325702a.previews.dropboxusercontent.com/p/thumb/AAtiP0mKVD_PRDHsAfC5RylhdJL4KHZ9gl-Siqnv0C8TuFfefgLdTzf1JdaaJi7voYd2hN8JPlvTFtkZneX3eG_88qA1IALOfTNJLa01eg3piN7sub1MUNX7Gj3YVIRefVLlTCMuqlPp4vjvh8qGxNeSpS9H8uFaeBkkiQYYhASNIgXI4N-VarSbirQEh1d2Zb-48YQiYz39rMJHNJDJEo1MtZuyy6m5QQQJ0dfYIYEUxNrhV-2uPtIkaDm0HFoVilG8J7EfoxYMDNJGlk8akao0LPCnl86jftNwE8loruAEsVNgQx2PPLSk48hAE246Pg0vVHxJ6K0vEt5mqVGgtru2OT017huuNrdQO9l9GfZdr5MknUtEY01qv291zsbs9cqjnUjz7GZUxn5rVOltArp8N7olpTyuuR3QN-YoCl1kXwxKRRednyLntE7pPHZfViF3zwSz0qd8YzCJ5M51r345v80AEKyFi8FeQer2cDWFiYukZ05kc3WxrTKgEMMCHZBMcHx3hM2Hx_8b5kMILPq3QJNMciOOQV_rR7bLqb6QnlWTB96FKQ5W5WK9ARhxL4LX-SouStN6w8Btrd9opmVF_99NaiPHbk4NX393JXcaGMZq7Fkkvoe6Akcps_VwLQ--9uCIgQsgiDdT-0rYvWa2/p.jpeg" alt="">
+          </div>
+
+
+
+</div>
+
+
+
+
+
+<div class="w3-container">
+
+
   <div class="filterDiv music videos ">Soul-o<br>
-    <video width="160" height="120" controls controlsList="nodownload" poster="https://uc1a9d60b17947d3c20ed3af722a.previews.dropboxusercontent.com/p/thumb/AAvFpW2mjmFRC5pqpBZoA2NKC5XJ0zbiNrET1NT5EpK326mllipZ5CRS932cTuL6YbZvncXIsjq1aXmEy26980u8oYfqmkwitDqAZVP7tGL-W1DzewZjZ2fhn57Yo9U2k4n9gtYnYlD4HPXfmAdQhVMJUbrTjhZEmGcTFpNT8ApBRC6klCcxDTPKPLyROPOwg9kHlfcRnI9hr5e5tc6DSQJwAkUCaNNyJLyDMFImeGgEwigx8v8QoNta1hf1TAibnuxCsZt0dYLirfeef0u1q9da1g9YIGuWBVwOosDPhnVfpYllqANOCV3ieu-ulWVOXq-NSvtw0Cul83tMfeonBHORLR37Q7HvQZ2NHzbiZMb6ITAxSz6L-bBgLoFFJ-tf0XblRF_7YYXjicZfJ1csHgFp_FWZqS5KMawm8jKpWGG9lJeTNK2BvhH_it0hF0J0t8Imu9I86jN-lFZ7jQUNjOwPvEqi_iFu-tO51CQmM1P0MaEuZ8IIM3jC1sI0qZm9ASzeBiiwwaILW9njFEflHj8P/p.jpeg">
-      <source src="https://www.dropbox.com/s/3vm1f5gqrx5seaa/SoulO_compressed.mp4?raw=1" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+<img src="https://uc1a9d60b17947d3c20ed3af722a.previews.dropboxusercontent.com/p/thumb/AAvFpW2mjmFRC5pqpBZoA2NKC5XJ0zbiNrET1NT5EpK326mllipZ5CRS932cTuL6YbZvncXIsjq1aXmEy26980u8oYfqmkwitDqAZVP7tGL-W1DzewZjZ2fhn57Yo9U2k4n9gtYnYlD4HPXfmAdQhVMJUbrTjhZEmGcTFpNT8ApBRC6klCcxDTPKPLyROPOwg9kHlfcRnI9hr5e5tc6DSQJwAkUCaNNyJLyDMFImeGgEwigx8v8QoNta1hf1TAibnuxCsZt0dYLirfeef0u1q9da1g9YIGuWBVwOosDPhnVfpYllqANOCV3ieu-ulWVOXq-NSvtw0Cul83tMfeonBHORLR37Q7HvQZ2NHzbiZMb6ITAxSz6L-bBgLoFFJ-tf0XblRF_7YYXjicZfJ1csHgFp_FWZqS5KMawm8jKpWGG9lJeTNK2BvhH_it0hF0J0t8Imu9I86jN-lFZ7jQUNjOwPvEqi_iFu-tO51CQmM1P0MaEuZ8IIM3jC1sI0qZm9ASzeBiiwwaILW9njFEflHj8P/p.jpeg" alt="">
   </div>
+</div>
+
+
+  <div class="w3-container">
+
   <div class="filterDiv business videos">Pilot Mtn Arms<br>
-    <video width="160" height="120" controls controlsList="nodownload">
-      <source src="https://www.dropbox.com/s/ucluihy8q4kk081/PilotMountainArms_compressed.mp4?raw=1" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <img src="https://uca244ad44e86422a247355fffdb.previews.dropboxusercontent.com/p/thumb/AAv_2ONw1GYI0qNGP4wi282tw3zDn2DGig5remeiDhg3kDfq4goLzIIDRjZVI1Op3LAp3b29XYt9FISd835m6JD-If5w3nK-9DNEZEch1tHzK-KxyEYJS1wFaNdPnzVHslczlxfQKaCXF-z6COtv6qk5r7NAruHYW_q0ONc0tLCjLhj_od5_wHuWwOh2A_vFEe_CYEmii2E7PCtqCMCHOYXSId5rK-97rHmES2sqK9NRRWsY5r55nTQFw78sQ1v-DpvALI7JqLGsnwvQnZ94u0nmpG9q2Z9Tyv-jBUtLiGZ07d9OxNfgV7YV04ih3H57leAbRV9AT0ciol3L1ORuXvT1ByCYWKOjNAfNZ2Ien4wGtZv8-mZUO73HNUYSQrnt2YKO-mLLfwYiKKPjq2K0UzxhMpWfDbm4Qz5rOEbWmhS2hgs4-3natKjksxMgzUWgEK_fer4gd1nhz6Hu0fGV5kxWQlX2GcTkh6DHdegRB642hU6buoAYxzBKAceYvxnVSzPG_H5_ex5FbKf4v11VC_W6KwodXlV5kHgXbrBggpTGMkbTc8ss5AXqVX-HQqZynOgHMfljBnSi-9L5H2np4L5o/p.jpeg" alt="">
   </div>
+</div>
+
+  <div class="w3-container">
+
   <div class="filterDiv business videos sas videos">Stratux<br>
     <video width="160" height="120" controls controlsList="nodownload" poster="https://uca8eaa149a10391dba675d698a9.previews.dropboxusercontent.com/p/thumb/AAsAtm1DCb4GbCv6MhXWRHSJOEoQTq6oUEKf1Hq_c4KGhfbN__HSbJGEEQ7c9E2h92JRYKdo3s3UkNOGq0HtiG2BxnieID1pVZQHc9_bGnC8RrH_Oy5PHTEdvDaIHsf5u-9YYt_EXOOGIqebWMGy-uup8EBSoCjxzM82Rv0stwKG_9m60w1cQWhf1mvVNP1gctGqGAtjCKV7Lr84WqVCu3J3qgMspZ8C9NMQL9p9Xu48fzbza6ExmIxWNYVA3P60HEC-kZQU5FU7UCmVOrXxMkg331x8DXuha1SI18dH03icWSDgwLxO4-q3ulWwXJdXUJKpmEzqI6HaRCxNFdZhPuRBtZvLbVzqM8DyNk0_mIU2rkkV-9NjBht9GqOZUs8mGlRZ-NIkitR538T5kN8y7hVYZcotfa54n9FX6fnyMnvA_gerksuuFSs1v76xAV1WmN5vYnvEJYPPAANQIc-pgOHu3pp4D5_OLPWC0F5yC7SJlvmxq06t_oZjg21SLFs0Lsrflnaw1ihWSMjF01LyLEAgJVen_MllSF5OaM1uELlYmE1xlj_XDFov3xKfxJ0YdihFOSi9crSugOFFcA8ysc_edbiidhWHE8XcQr_CRsmnr2lDcRQqnA9axinnsvzDg6VHzNbtPuOZMk_6sI9Oqlt0/p.jpeg">
       <source src="https://www.dropbox.com/s/1fptirehrp2sd92/StratuxInTheSky_compressed.mp4?raw=1" type="video/mp4">
         Your browser does not support the video tag.
     </video>
   </div>
+
+</div>
+
+  <div class="w3-container">
+
+
   <div class="filterDiv weddings">Halk/Burkey<br>
     <video width="160" height="120" controls controlsList="nodownload" poster="https://uc095382e159b19cb52ffeebaafc.previews.dropboxusercontent.com/p/thumb/AAvb2zXfkNLuCDY-G5txk1havRB0s5diY4khiHweZOpAYUcoC5zYf0BSJgEq7_16RUyOiHGaFvGuI2g8QduphJfhXJMtpK9y_8KOQgCheuVjYohTULDB2App2Lh5q0gWHNpDdrAO1ExEAJFU8NyVCNKAFwc1Na5ONblJ8eOCGZcrfD_VlaU8hNhRdCfp5xovtwCqjTBLFmHIZipP7PeFc1PWob6WY9gjyoum7LzxI3L5k663ESN2yz5ygdPIjgbc-zCeq1iBqTvg5N2Ae-6koyEIawVezoHie3ZS97iWSs6Fqgw7qlDw5EtSFJq9Zv05-qDrJj6RKnzGT08r_9bIQoXikzF5G7lapaBA4HYZO2795fQGn6yTj1jT2UDfN0-dbSMv5MncTJpJ9BbANa4QH9LaAJmphYPRfmdjlOBXWeYP-11wANGrFFy3O--i4g2i_FxTWkouLMLTaJxoHnIkHwd3uX1PhunFejJ0VZylDQGfgNdWvzNq3Gk2g4GeyvdbHabdhkpQBz4c151STv3z-UtkwaVa02duIvATx35tV0RMWdcgaV9lcSY2kYrgaf_O6esNgm6uWOwclStVgYQkdQuWMvazIGk21Sw_gei6tLWRmtss2eJvC5oESvL5i7WEqFjbRmaaS7r3TbxJaUzPUhA23RX4FjHjmAU1AafTP3CmIYZE-OaTJEyXym2716FyIpVKEuC9W4rmojp1Uq5QlWl-uoFr736AKyWaFDKbG6xGzlSKGkWWSWFz5UF4iOJwTO8/p.jpeg">
       <source src="https://www.dropbox.com/s/f2gnvo0wg6wjeqx/HalkBurkeyWedding_compressed.mp4?raw=1" type="video/mp4">
         Your browser does not support the video tag.
     </video>
   </div>
+
+</div>
+
+
+  <div class="w3-container">
+
+
   <div class="filterDiv weddings">Claire/Matt<br>
     <video width="160" height="120" controls controlsList="nodownload" poster="https://uc852c9905d11018158a0566a9ef.previews.dropboxusercontent.com/p/thumb/AAuHtkqkSIz6L8JL5p7Aw7wnH7iP5vWRtL31vIW05dvy646EbAeK6jAgUFoxk-3NrbgfU9dMiyRK9MeeAfIqjYJDGr2-Vo-NnYQhn-AFMWr7njw96U5Fbjie92TL6vHNbXTJStvxOesaIrjpbH1C90EKcvEN-FJz6mAPhZ_WZ7wgjBaZp-MYZjBXHP2bqfpqm7oocDJiSenyty2XGo-ehhKkBxSdBWTupCjqGr3XEq2uDZjq6z_mZKSJe4BTZwLkmYXvMNboAsBbntKPIQu_ar9tXXAjwDIZX__-dvJK9PGAaT1xXoJ_A9F_F6eOk5JWJ4qknHC5LQb3jOQsJJFh225m6B97kbPg-BIhXdvAWHFfj2Q99pzUsBjjT-shAHQiixLIJyQxZfZozt5tBLs-yDaeKB_mMkBFgYdZZjt6hcqernaMUp5RV7Eh7PGt-aSjZAbkaZuKCd8LUli_TtLSgNwBCecdBJ_fK_VWmMyNifcIwSFCo7Tp2MkTJsD45SCLFGoaDPt9ypVasGjjjd9in1D8pexpUuOG45FfCysoUwJbXwTi5BWQT0qEjMuuCcMTA2wYNHAMrN_JipZxZJqyPRSCFYOxmjybfxdG0WU_E631FVJSLXF0V_oTersfdTEf3dRDZSHT9GylfYMz8AOgsi-lfRw-HeoYoY3-ksj40DXeJbykiJhap69xGgyiujQ9EFbEZaEopRRQFsC26a1oL8nFdZcZwxxr6HJOsZirfAXnxO6ZthZgWDqcMoCLn-GQ42IZVtSfKOUbxeKe-M6qiTMD4LbooydQjHvBY-Ke2YFul4-txnVVb7qpBptu1Ngl5_0f7D69sbw21NLTLTemu7n5WLGHUFFsFEi72ddlTDEFiaD4U9K8CdfQ-sbtra5SM45QjyIfqckLQPIGAjLpS3Dac4spEgMFWQB9xXeGtiwcqf72R1AwvYG5o0pJub-_jTk/p.jpeg">
       <source src="https://www.dropbox.com/s/sf5y3ch3g8wzz52/ClaireMatt_compressed.mp4?raw=1" type="video/mp4">
         Your browser does not support the video tag.
     </video>
   </div>
+
+</div>
+
+
+
+  <div class="w3-container">
+
+
   <div class="filterDiv weddings">Kayla/Tyler<br>
     <video width="160" height="120" controls controlsList="nodownload" poster="https://uc4e3f16a9f35582b1e43c5f35d1.previews.dropboxusercontent.com/p/thumb/AAv4bDCFn8M7W3YHKchgFTlI8aeq2Us4O9Q9zzSY_aeReT55rIGk5VrlXmOwAAOHAKe6g7EDJXfwnYr45iUbKE14lfqyVqsyKNIt3vkGhp_Lzqy8h5N0p7IFwZ_6L0sSerRvFaWwdAm07UCvSLZawfLjkoZMFlKOWJzaxNaZv6G9oCJGsc2Ia6YU92ncV26dqtWfijxjQCpJKJdxYW22q9EsU4T4WAYUso8KLN0izZcaDOrml-xmx1n5ykPlXiyYXo0jgaF1iMWcxBr8LQkAMsv9gv-l_yZcM5Wp2kmJ6CGZdjZ7N7KEot1x7U7Lev0TKtF5_gF0zG7Rk-DIc7EGveZ-LnlBrqKwaWJwT9jkNxrPA5w5oHBCEkPdbt8UWR9gaFTGhBzgDS4u5TjXJ73F54CRjC-xsu6VjfwA_8DL2SSFLulZoBwn87RYmv354QB-9Tn9LAMmZdQyxD7PiWpxLYHcr0Qnd_Oh9fBh9A4RrMnC-4A1jtlUR5X9ivW59UCf_wwmCj1RDzYNCLRMNDU4gsBb6luIU8JMgNTeDdV4-LpRweFgAk-30um65e4X6RAJ-HnFT8Ko0EXb94_W7epMNlQg1A_ZYiDr2x-9G-CBhcdzapWWGSv6AMHvunrUjzeyU_s_3e5tvhdJrOyuIFM7njdbiu-6hyVxARcoLHT61sWx6Dbn2TEXuFVHZ5FU0njmUQG0AxuRsM2dcHBbWu5y1KfSobbMk5QDrQNBtw5Xs8Qe5rDB4ZxrZbJoWuIMQkugCYE/p.jpeg">
       <source src="https://www.dropbox.com/s/ms6rlbigv926p96/KaylaWedding_compressed.mp4?raw=1" type="video/mp4">
         Your browser does not support the video tag.
     </video>
   </div>
+
+
+</div>
+
+  <div class="w3-container">
+
+
   <div class="filterDiv business videos">Polar Hockey<br>
     <video width="160" height="120" controls controlsList="nodownload">
       <source src="https://www.dropbox.com/s/0u7mp4in3fmcsy5/PolarIceHouseYouthLeague_compressed.mp4?raw=1" type="video/mp4">
         Your browser does not support the video tag.
     </video>
   </div>
+
+
+
+</div>
+
+  <div class="w3-container">
+
+
   <div class="filterDiv business videos volunteer">LLS flash mob<br>
     <video width="160" height="120" controls controlsList="nodownload" poster="https://uca1413662cc54a11e1df94b318b.previews.dropboxusercontent.com/p/thumb/AAtoc6psndulkQMBDjZl9p91tD03sNFe0xHBz3Cet5IAhfypS7qMWvvWPU8UOFxZBOJBBV6PfAgGhjMI9doqLAGwKwdJy9GQqNBgYF7EiZgXE8EvqJNsaZ-gf-D2m3AwWA4-lzNnimCP9753axSwTfz5YKNqcXPRsH_4YkXsEWHV2MLPS5fde0t13MdXKA9fUtk-EV-2TtYAcOOX6gDrV_U1YGnI6CKf1cbnRypTZJbIqZSskbuKc1HXKdIbcMbCPghcSbmROCJO46SeUFCdODXaK0GXwXA7eBM182dsaSnz7ho9rpOQOrGw01Ovt7RdFmkgBi61CNrcbdH3fqQkXM2lRUWUJgk3VMHta4IxIxN1BpmNJY2On7YiwB9r7zt0YRXGiE-yXgyQtuWIkCqKsjnxqk1AbnCKOhu1hJHrj5TGkeBpjcIrf3MYpcYdbMKBwWILlUm_d8hZ-2uupBSkv8yE55LOHJ8GGkcNy9Bz3C_19bBPJ4w3EawIJFlF22OmFIa1CW8MX7mZNMrTWV6JbnnDwBgA3vewCsmQ9idWFYNh8SvVLJSg2g0JUDp0FS6hvpYkOMI7LFn8nnW5D40ag-QpZEFeCJivfjNz1aTcBCYokZEmPfor4lmqPBVlC7X7-oz2ImjFCspzyl0fehPZK7nC35MfXtRO5igDPZHc1B5pkrnG2t5zeclR2Zxn1vmgxvIM4SX5WJrUDyat6s5105YJmm6O1iWLqjUgow3cs25dQ1IN4sqtyJmMR4Snz0z82bQzzJy1ewjJupN8f4S0GO4uUhJpaPqIh4Ypy-Sive1MG5PwEyGSDb-SvMj32NqeSqQWA8Wx9c_5kTuDGrEpjy68w9Q64uB7FzdxNXah5TBg2P6LZWyvf28e84Z12hxHDiBv60Dvc_LYgiIn0w5Z2bB4kYTahxI5ZEWehix8E_Zu_RxObDdcO3UEutNLAQ9S7oZDNYJOROldp9mTJnBSRZU4fzS8winkgqpn3f0NceoYEQvFYyHCfAcr9zE-3PBP65kjHpInZnr5lf21ksfS5_DqOdZIHWY-34t8yrzdg1dS3skyf1duCPz9kldJdz--Ok0yeP6BCfYRU41TyIdKDal09RGD93W9BXjEGT7b4CPCw6wyvK360iJBkL3P05em3AmV1AuTqiXSvT1GcwI5snu_ZYOpjyxkJcBvt9q5GmU_jke0nrbpKVlOUgOiYS5ytWLX-rYulp05rrBB2QrZ55DlXrq9LPAM-dloxnZOnSYfwHh2Wx2a_ug_30Ba7fXRLcBmZYyqmtP8ePdQthfJXyrZIKYntNMSkJsNMczhuO0CG9KyqBTcdG-bKe6BR65m88d0ixSvXTWuJO5VNpcUciucXio2AOjm0sEOyjS5tz8-1ZXD5kB7SFb7yAFgPNK5oKKtPcz1bZNr9kHYFpynrPGb/p.jpeg">
       <source src="https://www.dropbox.com/s/nwpsgi6nagomai2/TeamBeatItforLLSFlashMob.mp4?raw=1" type="video/mp4">
         Your browser does not support the video tag.
     </video>
   </div>
+
+
+
+</div>
+
+  <div class="w3-container">
+
+
   <div class="filterDiv business videos volunteer">LLS on news<br>
     <video width="160" height="120" controls controlsList="nodownload">
       <source src="https://www.dropbox.com/s/qzmaugld50965qb/FlashMobABC11_compressed.mp4?raw=1" type="video/mp4">
         Your browser does not support the video tag.
     </video>
   </div>
+
+
+
+</div>
+
+  <div class="w3-container">
+
+
+
   <div class="filterDiv business videos volunteer">Derby Day<br>
     <video width="160" height="120" controls controlsList="nodownload">
       <source src="https://www.dropbox.com/s/b4g28yfr2c4a15a/CA_DerbyDay_compressed.mp4?raw=1" type="video/mp4">
         Your browser does not support the video tag.
     </video>
   </div>
+
+
+
+</div>
+
+  <div class="w3-container">
+
+
   <div class="filterDiv sports">Randomosity<br>
     <video width="160" height="120" controls controlsList="nodownload" poster="https://ucabc7c7fc22840189041afba7f1.previews.dropboxusercontent.com/p/thumb/AAv7vkpacS6-ewHv4kOIfXGvqxK5jSCBdhNTMpTzy_2w78I--g8C2_YsucbbQqfsS8EHLSGnGvLYb5drCrfcaF7AB4edYNyXC0RjtVe-a2Qhj2IGaG09bVZ62F51Nd__VA-TvrfbvdBIVkz3x0cN5_RtAolkLWHV9Zm4khA4PIEjd5Hjknjpi5u5BTqUSk-Nbzy3msbdaOoEZ_BG7nR4DWTkgz56Wvc3od5GivOjutWlrt-V7JSWAugbLCwfCYuhKiq_JHwzFvByWGQ79cw1NYElWMoF8PekTXSodD2L4ws4hrtJrUSt3TT06rKuEe_L_yXUfgp12Bec1nkzIFlMqL_xKEmixg0twqT-hIuvspesutV42Ur1_RrI8r1NucvlfRb6l_XZ4ke8G_GWjYxM7MeXMSoqv6JyyR5Lle5FmoB4BjDbtn4mcB0Yo7E3ejLdXFLDmB2wcWFgJn8tb615xNlb7rRXTM3AEAPQvSoqf_OXBKYJ-44uasH-75k5OeKhHf-g5qN-MjvMYkUO00rt7tsrD9kuNauMz3h9Tnk3IPIIRUXjy_TVBmL5Ce33jArN7z07dOG4nLmW2fkkOQkLGz7z1j2oxaNB5LBom5f0uDG6kgNbK98bhYBv5K6n3fKF9i8fqIbkVxGZXPqs5i_oo2-FCAk2NdbSCnBz8cYzremyz32Y6Rb4033tV5bmWlGjEFCY4RPpRxf-s2a74RwDajYxbwcASRlpmn4Jakn9xyE6shb0kNtkb8YAZL9zuL-ThDf3XEk5BWM6YzYVHLrOL6HhieLOYVm2jZxttgpQr0ohbt6xB9toZU-MEO3PeKSG0MYEXjwidFmqOdv0CsI0EYgRouyQnlCiBho_nLS7a5zHDLt5ZoniDcF2R7YQybUmguLMjF39neVqLXG3Zuoih15uXNIVlbHcDiHcRqdyF57aUykktYDmCj5nBUUp2CgnluxVwq4Fv7otGJuTHP-v7c2nPHibYfrjDxBF1Qgw9tKchIkA_bfjAqGuefFLJCc8wmRquEO4GD-iyEVOX9coSoJ8ELPgEXezGeCSRYBnkuzAcuZe5Z8FRYvbsY1ZdIZ2LOcl1ywv8TYQcaejqgErFQOjqnPv0pKkHGr5fKFXz60TULVdZejq7adIZzA93AlGzPHFsEMFxZVxZnDL33pmYUvjp8Mm6Gwxy1jH0b7cwaPIJLpbf7Hem0jUnTOfs9IQU9nLRwb5ar2_y_CJgC8No36_KSIR4-7SqEuoUfSzXzjXhsqhTqLPB7UHxmnHeWlJCTe95Af5Sg-grRxJf9xxy_QzymJyfajanaXzpf2XeiCl7vnHy9QH4S_Haa_fObCoqkG7_iudHj5kOr9KVbU9J05j3HRWksf2uZlHJAE2sVuBK5x7fuPXP3X_4k3V5evi6evipbYQFqp1IJI_aWysiDvnU39L0YRcvyy56gFsy3PjA_HveiXMCb5XYoQyBBz7n1lWm9OQYtQg79Xq24rDTpfF/p.jpeg">
       <source src="https://www.dropbox.com/s/q32hds4dc45w2zu/randomosity_compressed.mp4?raw=1" type="video/mp4">
         Your browser does not support the video tag.
     </video>
   </div>
+
+
+
+</div>
+
+  <div class="w3-container">
+
+
   <div class="filterDiv sports">poop<br>
     <video width="160" height="120" controls controlsList="nodownload" poster="https://uc589c9cee87227a62e46669c84e.previews.dropboxusercontent.com/p/thumb/AAsIvmG1uvpYESdPGdssLHn8PJ_v54fs12vpmYu5OA7Nvq7OL9KZQtpGrpbz3NEFctBEep_jk6jjw_h8H3rrHsNaAOL6XuN7zdCABjlHVPhivsYj0WBOFmyhA7kmo_aL-NiRYVIwhQBouAlfaIt_uTMhvkWnHwyGeGayKpQM9zaBv_oSemyleeIGQdv5_3DXr_bspgWUzohyi9JM301PG92YKjVfh1iHUmdXnChd-mIofX5831HYu_qDHoR_aOp2IwRDEAnWmxvh2j7-U9-5ukjE4afk0ZDQUcs0EqIBfebwOA/p.jpeg">
       <source src="https://www.dropbox.com/s/bip3kd87hpzjowi/poop_compressed.mp4?raw=1" type="video/mp4">
         Your browser does not support the video tag.
     </video>
   </div>
+
+
+
+</div>
+
+  <div class="w3-container">
+
+
   <div class="filterDiv church">Easter: 1oC<br>
     <video width="160" height="120" controls controlsList="nodownload" poster="https://ucf83d8e8a435ef5d205d27a8963.previews.dropboxusercontent.com/p/thumb/AAulA8WL7DZjJavLHF9dWdlwIeMMBSAXRWZqbxv2OUlWmHqTpkAaiZEpPid8wajYRiNTboOkWV62uPE47Zk-Qb-xCSYgr9MCmWscku0bH8l2xzWPFuqB9JmfSlaKHWZvg5kYZ_H4n8XKYhaKNNwtfu04kFwnO5B60Uyxe4soyv7KEtWZjmQs6WJgbTGS3bptVwoh1AoJHKm9cYTwHok8caTBJtkqQ_Kjwt8Byo-BU4aT4XnHZdbG5b6JR7_HR_hdyqNcue9ZPPWSmJW6b1NXdAiEEBt0ejAX54nvyzon10Yr0dHAXEf1wz4GYSyy-_W85_BDovHt9MlNevtPvMcBW1Z07_-PeD9GVDzT8rxnx7piX7rsT3fa5SVS7JqCVYxZG22IgpMRGMToXFTCZBy8C38efgHIWKJulgI0j9Ze_3TSLdFSHykU7XDDHmW8Yat-He366iTXXtd5KeMP3KLbrwneyziQQhxQ0Ns7hDH8LcVMwBb914YR4HbdhUox0PViwuvDw8ZzSYB6vs6y5Bfc-03KKQss3Rk9YAcc_pF3zyoj5Fc6XIIpCTgEsIYdCjgjXTN8heG4NbTTQCRtLn8hLmKCYpAzWQU0DFdfWA5kg87Na6dW2XJpg6fKzVIrGOVwObXfQ7L5riBOiRIt8IVdGCjfBiQpOplvySnRaK4t3C4MOkRv_AXp5ZBitR-dS3wpB-h6VMc8As-z82sF40nGwVUawp8NIkmCDI2JGOJkvxudcmq2_Hi46iDHsVHibUJCiPWioxLp7c-z1TF-8K1-c8J-wOJyed9dxdTzj0ONLMpMsZLHMZmHvL9nLbw8TjjVYzJzjZsAYpFghAVu-11-bS5OOjyPwDE9eOvGJzIFcnDo7Tzl_3n20puCONNpEVxz63RmSneTqT_kv_7BglhlVjePR2pcmzEfWEzoKKQ2QrKQ2TVzCoyzekplVjq5YffZ-3WQYD0XicckhPgk-93c-a4LBEE7sviOuj_BASFtthfRj_Mvh7r00ygCGk4UA8way8dziBrb4R60zl_RuHF17Q77G9SBpKNVWF8Ow-72z7TqMg/p.jpeg">
       <source src="https://www.dropbox.com/s/q240nrm3lod87xk/FoundryEaster2019%2003-PNJ47OsQEFk.mp4?raw=1" type="video/mp4">
         Your browser does not support the video tag.
     </video>
   </div>
+
+
+
+</div>
+
+  <div class="w3-container">
+
+
+
   <div class="filterDiv church">Easter: Foundry<br>
     <video width="160" height="120" controls controlsList="nodownload" poster="https://uc425fb5e5160a3d593de4b64353.previews.dropboxusercontent.com/p/thumb/AAv8iK6XdV20Z6LkdaSYz7r-QBpyPi4M7UgW0EMyO432m0L_kqbdfV5TvNs_O_MS4NK1cQGbjpaqpKzwWSDSH2MMqLqK86JlAM8B-RIZG3eWwFliFutjj3K6mDAxrBaZeJqZdOmjt1wcpFYWfTZ1tW_yxWr-AzJZTPpIeeQvr-UzKxTZyyeUI__xD6iYXb8DwM44iK6_PmRk7NG9sAhanRT8EvUKwMHWj-dnnmqqZn838eBIh-lUAU1CTGCeVeMXZbZ9MIr91Yy6kWOnjhRgfz7flH8-ZE-h6-sbYrw88_ixMc-AgbmVKBZWGoylefJur8j_fsVd5cFDq8k9A-LVqet-/p.jpeg">
       <source src="https://www.dropbox.com/s/q240nrm3lod87xk/FoundryEaster2019%2003-PNJ47OsQEFk.mp4?raw=1" type="video/mp4">
         Your browser does not support the video tag.
     </video>
   </div>
+</div>
+
 </div>
 
 <script>
