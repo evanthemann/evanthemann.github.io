@@ -49,3 +49,7 @@ h2 {
 .modalvideo {
   float: left;
 }
+
+.modalText {
+  padding: 100px;
+}
