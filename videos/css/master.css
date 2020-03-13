@@ -47,9 +47,13 @@ h2 {
 }
 
 .modalvideo {
+  display: block;
   float: left;
 }
 
 .modalText {
-  padding: 100px;
+  display: block;
+  padding: 80px 50px;
+  float: left;
+  text-align: center;
 }
