@@ -30,10 +30,7 @@ body{
   letter-spacing: 30px;
   padding-left: 30px;
 }
-.text2{
-  font-size: 10px;
-  color: gray;
-}
+
 
 @keyframes text {
   0%{
