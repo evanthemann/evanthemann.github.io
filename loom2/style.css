@@ -3,6 +3,7 @@ html,body{
   padding: 0;
   width: 100%;
   height: 100%;
+  background: #202020;
 }
 
 .b1{
@@ -14,6 +15,7 @@ html,body{
   display: table;
   background-size: cover;
 }
+
 
 .b1 .in1{
   display: table-cell;
@@ -40,9 +42,10 @@ html,body{
   color: #f9f3f4;
   text-decoration: none;
   font-family: 'montserrat', sans-serif;
-  border: 3px solid;
+  border: 1px solid;
   padding: 7px 13px;
   font-weight: bold;
+  animation: button 20s 1;
 }
 
 .content .btn:hover{
@@ -54,8 +57,9 @@ p {
   line-height: 200%;
   text-align: justify;
   margin: 3%;
-  background: white;
+  color: white;
 }
+
 
 
 /*
@@ -95,6 +99,18 @@ body{
     letter-spacing: 100px;
   }
   40%{
+    color: white;
+  }
+}
+
+@keyframes button {
+  0%{
+    color: black;
+  }
+  40%{
+    color: black;
+  }
+  100%{
     color: white;
   }
 }
