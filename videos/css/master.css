@@ -45,3 +45,15 @@
 h2 {
   font-family: sans-serif;
 }
+
+.modalvideo {
+  display: block;
+  float: left;
+}
+
+.modalText {
+  display: block;
+  padding: 80px 50px;
+  float: left;
+  text-align: center;
+}
