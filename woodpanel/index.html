@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<style>
+h1 {font-size: 20vw;font-family:'Arial Black'}
+</style>
+<body>
+
+<h3>create woodPanel[text]</h3>
+
+<input type="text" id="myText" placeholder="panel text...">
+
+<p>Click the button to make it the right size to print.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<h3 id="explain"></h3>
+<h1 id="demo"></h1>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myText").value;
+  var x =  x.toUpperCase();
+  document.getElementById("demo").innerHTML = x;
+  document.getElementById("explain").innerHTML = 'Now look at print preview. Drag window larger or smaller and look at print preview again to get the right size.';
+}
+</script>
+
+</body>
+</html>
