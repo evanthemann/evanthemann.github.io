@@ -1,313 +1,555 @@
 <!DOCTYPE html>
-<html>
-<title>Evan L. Mann</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- Custom CSS -->
-<link rel="stylesheet" href="css/custom.css">
+<html lang="en">
 
-<body>
+<head>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top w3-center">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-button navbartext">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a> -->
-  </div>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <!-- <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
-  </div>
-</div>
+  <title>Evan L. Mann</title>
 
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container " id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">EVAN <span class="w3-hide-small">L</span> MANN</span><br>
+  <!-- Custom fonts for this theme -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-<!-- ANIMATED TEXT SCROLLING -->
+  <!-- Theme CSS -->
+  <link href="css/freelancer.css" rel="stylesheet">
+  <link rel="apple-touch-icon" href="evan57.png"/>
 
-    <div class="w3-black line animated-text">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/custom.css">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Evan L Mann</a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+
+      <!-- Masthead Avatar Image -->
+      <img class="masthead-avatar mb-5" src="img/evan.png" alt="">
+
+      <!-- Masthead Heading -->
+      <h1 class="masthead-heading text-uppercase mb-0">Evan L. Mann</h1>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-user-circle"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <div class="animated-text">
         <div class="line">communications</div>
         <div class="line">video production</div>
         <div class="line">web development</div>
         <div class="line">digital marketing</div>
         <div class="line">motion graphics</div>
+        <div class="line">audio production</div>
+      </div>
+
+      <!-- Masthead Subheading
+      <p class="masthead-subheading font-weight-light mb-0">Video - Communications - Web</p> -->
+
     </div>
+  </header>
 
-  </div>
+  <!-- Portfolio Section -->
+  <section class="page-section portfolio" id="portfolio">
+    <div class="container">
 
+      <!-- Portfolio Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0"><!--Latest--><a href="videos">Portfolio</a></h2>
 
-  <!-- Credit to Unsplash artist -->
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-film"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
 
-  <div class="w3-display-bottomright">
+      <!-- Portfolio Grid Items -->
+      <div class="row">
 
-    <a
-    style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+        <!-- <img class="img-fluid" src="https://images.unsplash.com/photo-1512807286015-d57feef7f28f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80" alt="" > -->
 
-    href="https://unsplash.com/@sharegrid?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
-    target="_blank"
-    rel="noopener noreferrer"
-    title="Download free do whatever you want high-resolution photos from ShareGrid"
-    >
-      <span style="display:inline-block;padding:2px 3px">
-        <svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32">
-          <title>unsplash-logo</title>
-          <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
-        </svg>
-      </span>
+        <!-- Portfolio Item 1
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-video fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/EF1CDDDF-2881-47F3-B9BF-F9941B954CB1.jpeg" alt="">
+          </div>
+        </div> -->
 
-      <span style="display:inline-block;padding:2px 3px">ShareGrid</span></a>
+        <!-- Portfolio Item 2
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-video fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/66B4566E-C13E-4BCC-8B37-154FE56E3CFC.jpeg" alt="">
+          </div>
+        </div> -->
 
-  </div>
+        <!-- Portfolio Item 3
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-video fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/D2A93A4C-E415-470F-BA5A-A71AB9C99F45.jpeg" alt="">
+          </div>
+        </div> -->
 
-</div>
+        <!-- Portfolio Item 4
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-video fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/D0A392C6-6088-477C-9E29-2AAFC498081C.jpeg" alt="">
+          </div>
+        </div> -->
 
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <!-- <p class="w3-center"><em>I love videos</em></p> -->
-  <p>
-    My passion is making videos. I provide the most value by taking a real puzzle of an interview and turning it into a cohesive story. I have a corporate style of high-quality subtleties over flashiness. I like to edit most but I also enjoy cinematography. I like to shoot everything I edit when possible. My current job as a Senior Communications Specialist at SAS Software requires me to do a lot more than just video production and video editing. My other responsibilities include project management, writing, web administration, web design, graphic design and asset management.
-  </p>
+        <!-- Portfolio Item 5
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-video fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/B10A320D-C85A-4248-8149-E19A6A018313.jpeg" alt="">
+          </div>
+        </div> -->
 
-<!-- HIDING "REALLY GOOD AT" ELEMENT by commenting out below -->
+        <!-- Portfolio Item 6
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-video fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/633BD46F-D97E-4CDE-911C-DEB44CC7F614.jpeg" alt="">
+          </div>
+        </div> -->
 
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>Evan L. Mann</b></p><br>
-      <img src="/img/evan.png" class="w3-round w3-image w3-hover-opacity-off" alt="Photo of Me" width="200">
+      </div>
+      <!-- /.row -->
+
     </div>
+  </section>
 
-    <!-- Hide this text on small devices. This is the text next to headshot -->
+  <!-- About Section -->
+  <section class="page-section bg-primary text-white mb-0" id="about">
+    <div class="container">
 
-  <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>
-        This website is one of many places to find me on the web. My favorite thing is my Edit with Evan channel (which I don't upkeep as well as I should, nor do I have good organization, but I like it). Check out my YouTube for my current personal stuff or Vimeo for more formal stuff. Ok dammit here's my Facebook and Instagram too to show I'm not trying to hide anything. OK and my Twitter. You happy?
-      </p>
+      <!-- About Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- About Section Content -->
+      <div class="row">
+        <div class="col-lg-4 ml-auto">
+          <p class="lead">Evan is a driven, results-oriented professional with a passion for new media and communications. He enjoys snowboarding, running, biking and having a beer.</p>
+        </div>
+        <div class="col-lg-4 mr-auto">
+          <p class="lead">Currently at SAS, Evan spends his days working on the Internal & Culture Communications team, where he works to deliver company news to 14,000 employees.</p>
+        </div>
+      </div>
+
+      <!-- About Section Button -->
+      <div class="text-center mt-4">
+        <a class="btn btn-xl btn-outline-light" href="Resume.pdf">
+          <i class="fas fa-download mr-2"></i>
+          Download resume
+        </a>
+      </div>
+
     </div>
-  </div>
-  <!--
+  </section>
 
-  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-  </div>
+  <!-- Contact Section -->
+  <section class="page-section" id="contact">
+    <div class="container">
 
--->
+      <!-- Contact Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
 
-</div>
+      <!-- Icon Divider -->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
 
+      <!-- Contact Section Form -->
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h6 class="text-center">Send me an email at <a href="mailto:evanmann92@gmail.com">evanmann92@gmail.com</a>.</h6>
+          <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.
+           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf8yo-nn5XDooHPHOdYip6FfAT0B-nF0ZIW2TtwEsetd5_rXA/viewform?embedded=true" width="720" height="540" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+        </div>
+      </div>
 
+    </div>
+  </section>
 
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">100+</span><br>
-    Videos with SAS
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">6+</span><br>
-    Weddings
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">260,000+</span><br>
-    <a href="https://www.youtube.com/watch?v=JCKqwje4Hbk">YouTube views</a>
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">600+</span><br>
-    <a href="https://www.youtube.com/channel/UCDfan-YAmjYWbMf-Ryg-A3w">YouTube subscribers</a>
-  </div>
-</div>
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
 
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container ">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-  </div>
+        <!-- Footer Location -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Location</h4>
+          <p class="lead mb-0">Raleigh, NC 27607</p>
+        </div>
 
-  <!-- Credit to Unsplash artist -->
+        <!-- Footer Social Icons -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Around the Web</h4>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/evan.mann1">
+            <i class="fab fa-fw fa-facebook-f"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/evanthemann7">
+            <i class="fab fa-fw fa-twitter"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/evanmann92/">
+            <i class="fab fa-fw fa-linkedin-in"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://kit.co/evanthemann7">
+            <i class="fab fa-fw fa-camera"></i>
+          </a>
+        </div>
 
-  <div class="w3-display-bottomright">
-    <a
-    style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
-    href="https://unsplash.com/@peter_s?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
-    target="_blank" rel="noopener noreferrer"
-    title="Download free do whatever you want high-resolution photos from Peter Stumpf"
-    >
-      <span style="display:inline-block;padding:2px 3px">
-        <svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg>
-      </span>
-      <span style="display:inline-block;padding:2px 3px">Peter Stumpf</span>
+        <!-- Footer About Text
+        <div class="col-lg-4">
+          <h4 class="text-uppercase mb-4">Movie-a-month</h4>
+          <p class="lead mb-0">Since June 2019, I have been creating a short movie each month to exercise my creativity. <a href="movieamonth.html"> Take a look.</a></p>
+        </div> -->
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Copyright Section -->
+  <section class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Copyright &copy; Evan L. Mann 2020</small>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-to-top d-lg-none position-fixed ">
+    <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
     </a>
   </div>
 
-</div>
+  <!-- Portfolio Modals -->
 
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Click on the images to make them bigger</em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="https://i.imgur.com/P7hSNL3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/img/portfolio/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/img/portfolio/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/img/portfolio/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="/img/portfolio/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/img/portfolio/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/img/portfolio/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/img/portfolio/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-    </div>
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">VIEW MORE</button>
-  </div>
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container ">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-
-<!-- Where i work header -->
-
-  <!--
-
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
-
-  -->
-
-<!-- VIDEO INTEREST FORM -->
-
-  <!--
-
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf8yo-nn5XDooHPHOdYip6FfAT0B-nF0ZIW2TtwEsetd5_rXA/viewform?embedded=true" width="960" height="540" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
-  -->
-
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <!-- <img src="https://live.staticflickr.com/1954/43434949390_f2edc2d716_c.jpg" class="w3-image w3-round" style="width:100%"> -->
-    </div>
-    <div class="w3-col w3-panel w3-center">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Raleigh, NC<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 919-434-1623 <br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: evanmann92@gmail.com<br>
+  <!-- Portfolio Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Amtrak Roomette Tour (Superliner)</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-train"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <a href="http://www.youtube.com/watch?v=dPTu1nOZRdo" target="_blank"><img class="img-fluid rounded mb-5" src="img/portfolio/EF1CDDDF-2881-47F3-B9BF-F9941B954CB1.jpeg" alt=""></a>
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5"><a href="http://www.youtube.com/watch?v=dPTu1nOZRdo" target="_blank">Click here to watch video.</a><br>I took the train overnight from Chicago to Memphis in a sleeper car. Equipment: iPhone 6s Plus, Manfrotto landscape lens, DJI Osmo Mobile 2, Audio-Technica condenser microphone. Software: Blender, iMovie iOS, Font Candy, Union.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p> -->
-
     </div>
   </div>
-</div>
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <!-- Portfolio Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Stream YouTube Live on Raspberry Pi</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-video"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <a href="https://www.youtube.com/watch?v=_oadSWyTC_w" target="_blank"><img class="img-fluid rounded mb-5" src="img/portfolio/66B4566E-C13E-4BCC-8B37-154FE56E3CFC.jpeg" alt=""></a>
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5"><a href="https://www.youtube.com/watch?v=_oadSWyTC_w">Click here to watch the video.</a><br>This is a tutorial showing how to stream YouTube Live videos on a Raspberry Pi. Equipment: Mac Mini, iPad Pro, Canon 7D, Audio-Technica condenser microphone. Software: Quicktime, Blender, iMovie iOS, Cute Cut Pro.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+  <!-- Portfolio Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Write a movie script in Google Docs</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-film"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <a href="https://www.youtube.com/watch?v=PM3uUnWGK80" target="_blank"><img class="img-fluid rounded mb-5" src="img/portfolio/D2A93A4C-E415-470F-BA5A-A71AB9C99F45.jpeg" alt=""></a>
+                <!-- Portfolio Modal - Text -->
+                <a href="https://www.youtube.com/watch?v=PM3uUnWGK80" target="_blank"><p class="mb-5">Click here to watch video.</a><br>This video tutorial shows how to install a Google Docs plugin for formatting a screenplay. Equipment: Audio-Technica condenser mic. Software: Quicktime, Handbrake, iMovie iOS.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
+  <!-- Portfolio Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Amtrak roomette tour</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <a href="https://www.youtube.com/watch?v=WtrDAU_tQVM" target="_blank"><img class="img-fluid rounded mb-5" src="img/portfolio/D0A392C6-6088-477C-9E29-2AAFC498081C.jpeg" alt=""></a>
+                <!-- Portfolio Modal - Text -->
+                <a href="https://www.youtube.com/watch?v=WtrDAU_tQVM" target="_blank"><p class="mb-5">Click here to watch the video.</a><br> This is a tour of the roomette on the Amtrak train that goes up and down the east coast. Equipment: Canon 7D, Rode SmartLav+, Guerilla Tripod. Software: Blender, iMovie iOS.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
+  <!-- Portfolio Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Amtak bedroom tour</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <a href="https://www.youtube.com/watch?v=20JzjJJYcLo" target="_blank"><img class="img-fluid rounded mb-5" src="img/portfolio/B10A320D-C85A-4248-8149-E19A6A018313.jpeg" alt=""></a>
+                <!-- Portfolio Modal - Text -->
+                <a href="https://www.youtube.com/watch?v=20JzjJJYcLo" target="_blank"><p class="mb-5">Click here to watch video.</a><br> This is a tour of the bedroom on the Amtrak train that goes up and down the east coast. Equipment: Canon 7D, Rode SmartLav+, Guerilla Tripod. Software: Blender, iMovie iOS.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 6 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Edit video in Python</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                <a href="https://www.youtube.com/watch?v=n1fTJEc3RDA" target="_blank"><img class="img-fluid rounded mb-5" src="img/portfolio/633BD46F-D97E-4CDE-911C-DEB44CC7F614.jpeg" alt=""></a>
+                <!-- Portfolio Modal - Text -->
+                <a href="https://www.youtube.com/watch?v=n1fTJEc3RDA" target="_blank"><p class="mb-5">Click here to watch video.</a><br>This is a video showing how to make simple edits to a video using the Python package MoviePy. Equipment: Quicktime, Audio-technica microphone. Software: Blender, Handbrake, iMovie iOS, Audacity.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Close Window
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/freelancer.min.js"></script>
 
 </body>
+
 </html>
