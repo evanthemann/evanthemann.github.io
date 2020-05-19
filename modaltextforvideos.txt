@@ -1,0 +1,45 @@
+modaltext
+
+
+    <div class="w3-col m3">
+      <img src="https://i.imgur.com/zCBgjXW.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Snowbasin">
+      <p>Video from snowboarding trip to Snowbasin in Utah. I used my DJI Osmo with my GoPro to get smooth footage while snowboarding. The third day it was snowing and foggy so I had the GoPro mounted to my helmet. <a href="https://www.dropbox.com/s/r52kcipvyfjsnci/Snowbasin%202020-wZJ2CIcJCVc.mp4?dl=0" target="_blank">Check it out</a> or find it on my <a href="/videos" target="_blank">videos</a> page.</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://i.imgur.com/DpTX5nf.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Train trip">
+      <p>Vlog from a weekend vacation by train to Orlando from Raleigh. Filmed on iPhone, edited on iPad. <a href="https://www.dropbox.com/s/xyxrj435rlwzg3v/Train%20trip%20May%202019-fuZVlkHQ3ls.mp4?dl=0" target="_blank">Check it out</a> or find it on my <a href="/videos" target="_blank">videos</a> page.</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://i.imgur.com/P7hSNL3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Stratux">
+      <p>This video was made for SAS for an initiave called Data on the Fly. I was a project manager for that event, so was able to make this video to promote the event and to be shown to students. Data on the Fly was a STEM event with the NC Science Festival where students build airplane tracking devices to collect and analyze aeronautical data. <a href="https://www.dropbox.com/s/1fptirehrp2sd92/StratuxInTheSky_compressed.mp4?dl=0" target="_blank">Check it out</a> or find it on my <a href="/videos" target="_blank">videos</a> page.</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://i.imgur.com/3DgbXTn.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Matt and Claire Wedding">
+      <p>I've made a few wedding videos, and this is my most recent one. I also delivered to the client a DVD with video messages and different raw segments of the wedding. This is the highlight video. <a href="https://www.dropbox.com/s/sf5y3ch3g8wzz52/ClaireMatt_compressed.mp4?dl=0" target="_blank">Check it out</a> or find it on my <a href="/videos" target="_blank">videos</a> page.</p>
+    </div>
+
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="https://i.imgur.com/dE6Nfwx.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Inside SAS">
+      <p>This project was created to show the culture of SAS. Created for Internal Communications, but it was picked up by the external and social media teams to be published externally. <a href="https://www.dropbox.com/s/5zrrupo9uogpp2o/Inside%20SAS%20_%20SAS%20Careers-nNEjCYRlxEs.mp4?dl=0" target="_blank">Check it out</a> or find it on my <a href="/videos" target="_blank">videos</a> page.</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://i.imgur.com/NH5hdJF.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="No Light Music Video">
+      <p>This is one of my favorite music videos I've directed. Created for artist Charmingly Ghetto in Boston, MA. <a href="https://www.dropbox.com/s/wx43qb3w8xo6b2z/Charmingly%20Ghetto%20-%20No%20Light%20%28Music%20Video%29-JXkSqb47K-s.mp4?dl=0" target="_blank">Check it out</a> or find it on my <a href="/videos" target="_blank">videos</a> page.</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://i.imgur.com/YcLZWpA.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="How to get YouTube into Garageband">
+      <p>I created this video mainly to try out a multicam setup and I thought it could help people out, and it ended up getting a ton of views on YouTube! <a href="https://www.dropbox.com/s/im1hmkls97jj5be/How%20to%20get%20music%20from%20Youtube%20into%20Garageband%20on%20iPhone-JCKqwje4Hbk.mp4?dl=0" target="_blank">Check it out</a> or find it on my <a href="/videos" target="_blank">videos</a> page.</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://i.imgur.com/LisfNMp.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Boxed In">
+      <p>Short film I made in high school, and one of my favorite projects. <a href="https://www.dropbox.com/s/b8d3kq3lpm69jny/Boxed%20In%20HD-jprlb45dzSA.mp4?dl=0" target="_blank">Check it out</a> or find it on my <a href="/videos" target="_blank">videos</a> page.</p>
+    </div>
