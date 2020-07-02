@@ -175,50 +175,50 @@
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="https://i.imgur.com/zCBgjXW.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Snowbasin">
+      <img src="https://i.imgur.com/zCBgjXW.jpg" style="width:100%" onclick="document.getElementById('id01').style.display='block'" class="w3-hover-opacity" alt="Snowbasin">
     </div>
 
     <div class="w3-col m3">
-      <img src="https://i.imgur.com/P7hSNL3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Stratux">
+      <img src="https://i.imgur.com/P7hSNL3.jpg" style="width:100%" onclick="document.getElementById('id02').style.display='block'" class="w3-hover-opacity" alt="Stratux">
     </div>
 
     <div class="w3-col m3">
-      <img src="https://i.imgur.com/YcLZWpA.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Youtube into Garageband">
+      <img src="https://i.imgur.com/YcLZWpA.jpg" style="width:100%" onclick="document.getElementById('id03').style.display='block'" class="w3-hover-opacity" alt="Youtube into Garageband">
     </div>
 
     <div class="w3-col m3">
-      <img src="https://i.imgur.com/3DgbXTn.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Matt and Claire wedding">
+      <img src="https://i.imgur.com/3DgbXTn.jpg" style="width:100%" onclick="document.getElementById('id04').style.display='block'" class="w3-hover-opacity" alt="Matt and Claire wedding">
     </div>
   </div>
 
   <div class="w3-row-padding w3-center w3-section">
     <div class="w3-col m3">
-      <img src="https://i.imgur.com/LisfNMp.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Boxed In">
+      <img src="https://i.imgur.com/LisfNMp.jpg" style="width:100%" onclick="document.getElementById('id05').style.display='block'" class="w3-hover-opacity" alt="Boxed In">
     </div>
 
     <div class="w3-col m3">
-      <img src="https://i.imgur.com/dE6Nfwx.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Inside SAS">
+      <img src="https://i.imgur.com/dE6Nfwx.jpg" style="width:100%" onclick="document.getElementById('id06').style.display='block'" class="w3-hover-opacity" alt="Inside SAS">
     </div>
 
     <div class="w3-col m3">
-      <img src="https://i.imgur.com/NH5hdJF.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="No Light music video">
+      <img src="https://i.imgur.com/NH5hdJF.jpg" style="width:100%" onclick="document.getElementById('id07').style.display='block'" class="w3-hover-opacity" alt="No Light music video">
     </div>
 
     <div class="w3-col m3">
-      <img src="https://i.imgur.com/DpTX5nf.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Train trip">
+      <img src="https://i.imgur.com/DpTX5nf.jpg" style="width:100%" onclick="document.getElementById('id08').style.display='block'" class="w3-hover-opacity" alt="Train trip">
     </div>
     <a href="/videos"><button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">VIEW MORE</button></a>
   </div>
 </div>
 
-<!-- Modal for full size images on click-->
+<!-- Modal for full size images on click
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
     <img id="img01" class="w3-image">
     <p id="caption" class="w3-opacity w3-large"></p>
   </div>
-</div>
+</div> -->
 
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 w3-display-container ">
@@ -266,6 +266,90 @@
     </div>
   </div>
 </div>
+
+
+<!--- MODALS --->
+
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>Some text. Some text. Some text.</p>
+        <p>Some text. Some text. Some text.</p>
+      </div>
+    </div>
+</div>
+
+<div id="id02" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>Some text. Some text. Some text.</p>
+        <p>Some text. Some text. Some text.</p>
+      </div>
+    </div>
+</div>
+
+<div id="id03" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>Some text. Some text. Some text.</p>
+        <p>Some text. Some text. Some text.</p>
+      </div>
+    </div>
+</div>
+
+<div id="id04" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>Some text. Some text. Some text.</p>
+        <p>Some text. Some text. Some text.</p>
+      </div>
+    </div>
+</div>
+
+<div id="id05" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>Some text. Some text. Some text.</p>
+        <p>Some text. Some text. Some text.</p>
+      </div>
+    </div>
+</div>
+
+<div id="id06" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id06').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>Some text. Some text. Some text.</p>
+        <p>Some text. Some text. Some text.</p>
+      </div>
+    </div>
+</div>
+
+<div id="id07" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id07').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>Some text. Some text. Some text.</p>
+        <p>Some text. Some text. Some text.</p>
+      </div>
+    </div>
+</div>
+
+<div id="id08" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id08').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>Some text. Some text. Some text.</p>
+        <p>Some text. Some text. Some text.</p>
+      </div>
+    </div>
+</div>
+
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
