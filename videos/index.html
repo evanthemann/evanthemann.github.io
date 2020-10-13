@@ -1635,7 +1635,8 @@
 
 <div class="w3-container">
   <div id="myBtnContainer">
-      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn active" onclick="filterSelection('none')"> Show none</button>
+      <button class="btn" onclick="filterSelection('all')"> Show all</button>
       <button class="btn" onclick="filterSelection('music')">Music videos</button>
       <button class="btn" onclick="filterSelection('business')">Small business videos</button>
       <button class="btn" onclick="filterSelection('sas')">SAS videos</button>
@@ -1935,7 +1936,7 @@
   <!--  35 Amtrak Superliner Roomette  -->
 
   <div>
-    <div class="filterDiv misc" onclick="document.getElementById('id35').style.display='block'" class="w3-button w3-black">Amtrak Superliner Roomette<br>
+    <div class="filterDiv misc vlog" onclick="document.getElementById('id35').style.display='block'" class="w3-button w3-black">Amtrak Superliner Roomette<br>
       <img src="https://images2.imgbox.com/b5/e8/djaA5zqd_o.jpg" alt="">
     </div>
   </div>
@@ -2151,7 +2152,7 @@
   <!--  62 go pro lion  -->
 
   <div>
-    <div class="filterDiv misc montages" onclick="document.getElementById('id62').style.display='block'" class="w3-button w3-black">Africa vacation video for client<br>
+    <div class="filterDiv misc montages vlog" onclick="document.getElementById('id62').style.display='block'" class="w3-button w3-black">Africa vacation video for client<br>
       <img src="https://images2.imgbox.com/ed/48/Fjcxvmj5_o.jpeg" alt="">
     </div>
   </div>
@@ -2271,7 +2272,7 @@
   <!--  77 enter euphonics -->
 
   <div>
-    <div class="filterDiv misc" onclick="document.getElementById('id77').style.display='block'" class="w3-button w3-black">Enter Euphonics<br>
+    <div class="filterDiv misc vlog" onclick="document.getElementById('id77').style.display='block'" class="w3-button w3-black">Enter Euphonics<br>
       <img src="https://images2.imgbox.com/31/ab/tvs29NRL_o.jpeg" alt="">
     </div>
   </div>
@@ -2315,7 +2316,7 @@
 <!--  filer script  -->
 
 <script>
-filterSelection("all")
+filterSelection("none")
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
