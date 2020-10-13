@@ -1574,7 +1574,7 @@
 
 <!-- MODAL 81 :  -->
 
-<div id="id81" class="w3-modal">
+<!-- <div id="id81" class="w3-modal">
   <div class="w3-modal-content">
     <div class="w3-container">
       <span onclick="document.getElementById('id60').style.display='none'" class="w3-button w3-display-topright">&times;</span>
@@ -1589,54 +1589,14 @@
         </div>
     </div>
   </div>
-</div>
-
-<!-- MODAL 82 :  -->
-
-<div id="id82" class="w3-modal">
-  <div class="w3-modal-content">
-    <div class="w3-container">
-      <span onclick="document.getElementById('id60').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-        <div class="modalvideo">
-          <video width="360" height="240" controls controlsList="nodownload" poster="" preload="none">
-            <source src="https://www.dropbox.com/s/?raw=1" type="video/mp4">
-              Your browser does not support the video tag.
-          </video>
-        </div>
-        <div class="modalText">
-          <p>My role: </p>
-        </div>
-    </div>
-  </div>
-</div>
-
-<!-- MODAL 83 :  -->
-
-<div id="id83" class="w3-modal">
-  <div class="w3-modal-content">
-    <div class="w3-container">
-      <span onclick="document.getElementById('id60').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-        <div class="modalvideo">
-          <video width="360" height="240" controls controlsList="nodownload" poster="" preload="none">
-            <source src="https://www.dropbox.com/s/?raw=1" type="video/mp4">
-              Your browser does not support the video tag.
-          </video>
-        </div>
-        <div class="modalText">
-          <p>My role: </p>
-        </div>
-    </div>
-  </div>
-</div>
-
+</div> -->
 
 
 <!-- filter buttons -->
 
 <div class="w3-container">
   <div id="myBtnContainer">
-      <button class="btn active" onclick="filterSelection('none')"> Show none</button>
-      <button class="btn" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn active" onclick="filterSelection('featured')">Featured</button>
       <button class="btn" onclick="filterSelection('music')">Music videos</button>
       <button class="btn" onclick="filterSelection('business')">Small business videos</button>
       <button class="btn" onclick="filterSelection('sas')">SAS videos</button>
@@ -1650,6 +1610,7 @@
       <button class="btn" onclick="filterSelection('vlog')">Vlog</button>
       <button class="btn" onclick="filterSelection('montages')">Montages</button>
       <button class="btn" onclick="filterSelection('misc')">Misc</button>
+      <button class="btn" onclick="filterSelection('all')">Show all</button>
   </div>
 </div>
 
@@ -1685,7 +1646,7 @@
   <!--  stratux -->
 
   <div>
-    <div class="filterDiv sas" onclick="document.getElementById('id04').style.display='block'" class="w3-button w3-black">Stratux<br>
+    <div class="filterDiv sas featured interviews" onclick="document.getElementById('id04').style.display='block'" class="w3-button w3-black">Stratux<br>
       <img src="https://images2.imgbox.com/20/b4/6CD6JmqZ_o.jpg" alt="">
     </div>
   </div>
@@ -1701,7 +1662,7 @@
   <!--  claire matt -->
 
   <div>
-    <div class="filterDiv weddings" onclick="document.getElementById('id06').style.display='block'" class="w3-button w3-black">Claire/Matt<br>
+    <div class="filterDiv weddings featured" onclick="document.getElementById('id06').style.display='block'" class="w3-button w3-black">Claire/Matt<br>
           <img src="https://images2.imgbox.com/cd/29/bk3e9Lzn_o.jpg" alt="">
     </div>
   </div>
@@ -1912,7 +1873,7 @@
   <!--  32 cinewhoop biking  -->
 
   <div>
-    <div class="filterDiv montages" onclick="document.getElementById('id32').style.display='block'" class="w3-button w3-black">Cinewhoop biking<br>
+    <div class="filterDiv montages sports" onclick="document.getElementById('id32').style.display='block'" class="w3-button w3-black">Cinewhoop biking<br>
       <img src="https://images2.imgbox.com/18/5f/LZPCmtAy_o.jpg" alt="">
     </div>
   </div>
@@ -2024,7 +1985,7 @@
   <!--  46 snowbasin 2020 -->
 
   <div>
-    <div class="filterDiv montages sports" onclick="document.getElementById('id46').style.display='block'" class="w3-button w3-black">Snowbasin 2020<br>
+    <div class="filterDiv montages sports featured" onclick="document.getElementById('id46').style.display='block'" class="w3-button w3-black">Snowbasin 2020<br>
       <img src="https://images2.imgbox.com/21/d5/ZYTJQzIt_o.jpg" alt="">
     </div>
   </div>
@@ -2120,7 +2081,7 @@
   <!--  58 thiago get by -->
 
   <div>
-    <div class="filterDiv music" onclick="document.getElementById('id58').style.display='block'" class="w3-button w3-black">Get By<br>
+    <div class="filterDiv music featured" onclick="document.getElementById('id58').style.display='block'" class="w3-button w3-black">Get By<br>
       <img src="https://images2.imgbox.com/8d/9e/CPgEnGxc_o.jpg" alt="">
     </div>
   </div>
@@ -2136,7 +2097,7 @@
   <!--  60 priority health speed dating  -->
 
   <div>
-    <div class="filterDiv tutorials" onclick="document.getElementById('id60').style.display='block'" class="w3-button w3-black">Priority Health Speed Dating<br>
+    <div class="filterDiv misc" onclick="document.getElementById('id60').style.display='block'" class="w3-button w3-black">Priority Health Speed Dating<br>
       <img src="https://images2.imgbox.com/18/dc/j2bQKtVs_o.jpeg" alt="">
     </div>
   </div>
@@ -2176,7 +2137,7 @@
   <!--  65 midway arenacross -->
 
   <div>
-    <div class="filterDiv business interview" onclick="document.getElementById('id65').style.display='block'" class="w3-button w3-black">Midway Arenacross<br>
+    <div class="filterDiv business interviews" onclick="document.getElementById('id65').style.display='block'" class="w3-button w3-black">Midway Arenacross<br>
       <img src="https://images2.imgbox.com/01/65/XTNXdvsi_o.jpeg" alt="">
     </div>
   </div>
@@ -2184,7 +2145,7 @@
   <!--  66 skating youtube marsh creek greyson -->
 
   <div>
-    <div class="filterDiv misc montages" onclick="document.getElementById('id66').style.display='block'" class="w3-button w3-black">Skating montage<br>
+    <div class="filterDiv misc montages sports" onclick="document.getElementById('id66').style.display='block'" class="w3-button w3-black">Skating montage<br>
       <img src="https://images2.imgbox.com/b5/05/MpjXWERP_o.jpeg" alt="">
     </div>
   </div>
@@ -2232,7 +2193,7 @@
   <!--  72 kaplan open  -->
 
   <div>
-    <div class="filterDiv misc interviews" onclick="document.getElementById('id72').style.display='block'" class="w3-button w3-black">Kaplan Open<br>
+    <div class="filterDiv misc interviews sports featured" onclick="document.getElementById('id72').style.display='block'" class="w3-button w3-black">Kaplan Open<br>
       <img src="https://images2.imgbox.com/af/7c/QMQpj5Ur_o.jpeg" alt="">
     </div>
   </div>
@@ -2240,7 +2201,7 @@
   <!--  73 fan -->
 
   <div>
-    <div class="filterDiv misc" onclick="document.getElementById('id73').style.display='block'" class="w3-button w3-black">Fan<br>
+    <div class="filterDiv misc featured" onclick="document.getElementById('id73').style.display='block'" class="w3-button w3-black">Fan<br>
       <img src="https://images2.imgbox.com/43/34/qBAysQGp_o.jpeg" alt="">
     </div>
   </div>
@@ -2256,7 +2217,7 @@
   <!--  75 joe budden interview -->
 
   <div>
-    <div class="filterDiv interview" onclick="document.getElementById('id75').style.display='block'" class="w3-button w3-black">Joe Budden interview<br>
+    <div class="filterDiv interviews" onclick="document.getElementById('id75').style.display='block'" class="w3-button w3-black">Joe Budden interview<br>
       <img src="https://images2.imgbox.com/fb/5b/CxMxigRR_o.jpeg" alt="">
     </div>
   </div>
@@ -2288,7 +2249,7 @@
   <!--  79 francesca and brandon -->
 
   <div>
-    <div class="filterDiv weddings" onclick="document.getElementById('id79').style.display='block'" class="w3-button w3-black">Francesca and Brandon<br>
+    <div class="filterDiv weddings" onclick="document.getElementById('id79').style.display='block'" class="w3-button w3-black">Francesca/Brandon<br>
       <img src="https://images2.imgbox.com/19/2f/kI1bSN3T_o.jpeg" alt="">
     </div>
   </div>
@@ -2296,18 +2257,18 @@
   <!--  80 cochabamba 2015 -->
 
   <div>
-    <div class="filterDiv interview" onclick="document.getElementById('id80').style.display='block'" class="w3-button w3-black">Cochabamba 2015<br>
+    <div class="filterDiv interviews vlog" onclick="document.getElementById('id80').style.display='block'" class="w3-button w3-black">Cochabamba 2015<br>
       <img src="https://images2.imgbox.com/35/29/4fwMQ2JD_o.jpeg" alt="">
     </div>
   </div>
 
   <!--  81  -->
 
-  <div>
+  <!-- <div>
     <div class="filterDiv tutorials" onclick="document.getElementById('id60').style.display='block'" class="w3-button w3-black">TITLE<br>
       <img src="" alt="">
     </div>
-  </div>
+  </div> -->
 
 
 
@@ -2316,7 +2277,7 @@
 <!--  filer script  -->
 
 <script>
-filterSelection("none")
+filterSelection("featured")
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
