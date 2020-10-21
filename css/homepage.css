@@ -1,0 +1,82 @@
+* {
+  margin:0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.full-screen {
+  width:100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-screen video{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.textfill {
+  position: absolute;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  color: gray;
+  padding: 20px;
+}
+
+.tf_left{
+  top: 90%;
+  left: 10%;
+  transform: translate(-10%,-90%);
+}
+
+.tf_left:before {
+  content: 'HOME';
+}
+
+.tf_middle{
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%,-90%);
+}
+.tf_middle:before {
+  content: 'VIDEOS';
+}
+
+.tf_right{
+  top: 90%;
+  left: 90%;
+  transform: translate(-90%,-90%);
+}
+.tf_right:before {
+  content: 'BLOG';
+}
+
+.textfill:before {
+  color: black;
+  position: absolute;
+  width: 0;
+  overflow: hidden;
+  transition: 0.8s;
+}
+
+.textfill:hover:before {
+  width: 100%;
+  cursor: pointer;
+}
+
+.customButton {
+  border: solid;
+}
+
+.customButton:hover {
+  border: solid red;
+}
