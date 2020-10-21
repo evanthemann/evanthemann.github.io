@@ -90,3 +90,24 @@ body, html {
     min-height: 400px;
   }
 }
+
+.derbyPic {
+  background-image: url('https://images.unsplash.com/10/wii.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
+  height: 400px;
+  -webkit-filter: grayscale(100%) blur(5px) brightness(50%) contrast(140%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%) blur(5px) brightness(50%) contrast(140%);
+}
+
+.polarPic {
+  background-image: url('https://images.unsplash.com/10/wii.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
+  height: 400px;
+  -webkit-filter: grayscale(100%) blur(5px) brightness(50%) contrast(140%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%) blur(5px) brightness(50%) contrast(140%);
+}
+
+.weddingPic {
+  background-image: url('https://images.unsplash.com/10/wii.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
+  height: 400px;
+  -webkit-filter: grayscale(100%) blur(5px) brightness(50%) contrast(140%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%) blur(5px) brightness(50%) contrast(140%);
+}
