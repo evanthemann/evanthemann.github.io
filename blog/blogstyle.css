@@ -33,3 +33,7 @@ body, html {
   transform: translate(-50%, -50%);
   color: white;
 }
+
+.w3-card-4 {
+  margin-top: 20px;
+}

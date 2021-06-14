@@ -23,48 +23,24 @@
 <!-- Grid -->
 <div class="w3-row-padding">
 
-  <!-- Blog entry -->
+  <!-- Blog entry 3 Cancun -->
   <div class="w3-col s6">
     <div class="w3-card-4">
-      <img src="https://images.unsplash.com/photo-1585773622274-3be290c6f8f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80" alt="Nature" style="width:100%">
-      <div class="w3-container">
-        <h3><b>Travel report: Teardrop trailer to Beech Mountain</b></h3>
-        <h5>Weekend trip camping in a Teardrop trailer and snowboarding. <span class="w3-opacity">December 16, 2019</span></h5>
-      </div>
-
-      <div class="w3-container">
-        <div class="w3-row">
-          <div class="w3-col m8 s12">
-            <p><a href="post2.html"><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></a></p>
-          </div>
-          <div class="w3-col m4 w3-hide-small">
-            <p><span class="w3-padding-large w3-right"></p>
-          </div>
-        </div>
-      </div>
+      <div w3-include-html="preview3.html"></div>
     </div>
-
   </div>
 
-  <!-- Blog entry -->
+  <!-- Blog entry 2 Beech -->
   <div class="w3-col s6">
     <div class="w3-card-4">
-      <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1413&q=80" alt="Norway" style="width:100%">
-      <div class="w3-container">
-        <h3><b>Travel report: Chicago/Memphis</b></h3>
-        <h5>Fly from RDU to CHI, Amtrak from CHI to MEM, fly from MEM to RDU. <span class="w3-opacity">November 19, 2019</span></h5>
-      </div>
+      <div w3-include-html="preview2.html"></div>
+    </div>
+  </div>
 
-      <div class="w3-container">
-        <div class="w3-row">
-          <div class="w3-col m8 s12">
-            <p><a href="post1.html"><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></a></p>
-          </div>
-          <div class="w3-col m4 w3-hide-small">
-            <p><span class="w3-padding-large w3-right"></p>
-          </div>
-        </div>
-      </div>
+  <!-- Blog entry 1 Chicago-->
+  <div class="w3-col s6">
+    <div class="w3-card-4">
+      <div w3-include-html="preview1.html"></div>
     </div>
   </div>
 
@@ -76,8 +52,44 @@
 
 <!-- Footer -->
 <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-  <p>Copyright © Evan L. Mann 2020. Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <p>Copyright © Evan L. Mann 2021. Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
 </body>
 </html>
+
+
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script>
+
+<script>
+includeHTML();
+</script>
