@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<title>W3.JS</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<script>
+var myObject= {"toDoItems":[
+{"task":"Take out the trash","Ok":false},
+{"task":"Spare water jug in hallway","checked":""},
+{"task":"Beth bike inside","checked":""},
+{"task":"Chairs on back porch against wall","checked":""},
+{"task":"Scrubbing bubbles in toilets","checked":""}
+]};
+</script>
+<body class="w3-container">
+
+<h2>Checklist before leaving the beach</h2>
+
+<table id="id01" class="w3-table-all w3-xlarge">
+  <tr w3-repeat="toDoItems">
+    <td><input type="checkbox" class="w3-check" {{checked}}></td>
+    <td>{{task}}</td>
+  </tr>
+</table>
+
+<script>
+w3.displayObject("id01", myObject);
+</script>
+
+</body>
+</html>
