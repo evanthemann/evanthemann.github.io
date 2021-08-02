@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html>
-<title>W3.JS</title>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<head>
+	<title>My Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+</head>
+<body>
 
-<script>
-var myObject= {"toDoItems":[
-{"task":"Take out the trash","Ok":false},
-{"task":"Spare water jug in hallway","checked":""},
-{"task":"Beth bike inside","checked":""},
-{"task":"Chairs on back porch against wall","checked":""},
-{"task":"Scrubbing bubbles in toilets","checked":""}
-]};
-</script>
-<body class="w3-container">
+<div data-role="page">
 
-<h2>Checklist before leaving the beach</h2>
+	<div data-role="header">
+		<h1>Beach checklist</h1>
+	</div><!-- /header -->
 
-<table id="id01" class="w3-table-all w3-xlarge">
-  <tr w3-repeat="toDoItems">
-    <td><input type="checkbox" class="w3-check" {{checked}}></td>
-    <td>{{task}}</td>
-  </tr>
-</table>
+	<div data-role="content">
+    <label>
+      <input type="checkbox" name="checkbox-0 ">Take out the trash
+    </label>
+    <label>
+      <input type="checkbox" name="checkbox-0 ">Spare water jug in hallway
+    </label>
+    <label>
+      <input type="checkbox" name="checkbox-0 ">Chairs against back porch wall
+    </label>
+    <label>
+      <input type="checkbox" name="checkbox-0 ">Beth bike and captain chair inside
+    </label>
+    <label>
+      <input type="checkbox" name="checkbox-0 ">Scrubbing bubbles in toilets and shower
+    </label>
 
-<script>
-w3.displayObject("id01", myObject);
-</script>
+	</div><!-- /content -->
+
+</div><!-- /page -->
 
 </body>
 </html>
