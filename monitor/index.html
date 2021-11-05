@@ -6,10 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta http-equiv="refresh" content="60">
   <title>Document</title>
+  <style>
+    body {
+      background-color: black;
+    }
+  </style>
+  <script>
+    var counter = 300;
+    // The countdown method.
+    window.setInterval(function () {
+        counter--;
+        if (counter >= 0) {
+            var span;
+            span = document.getElementById("cnt");
+            span.innerHTML = counter;
+        }
+        if (counter === 0) {
+            clearInterval(counter);
+        }
+    }, 1000);
+    window.setInterval('refresh()', 300000); 	// Call a function every 300000 milliseconds (OR 300 seconds or 5 minutes).
+    // Refresh or reload page.
+    function refresh() {
+        window .location.reload();
+    }
+  </script>
 </head>
 <body>
-
-<iframe src="http://107.13.163.156:8081/" frameborder="0" width="1920" height="1080"></iframe>
-
+<iframe src="http://107.13.163.156:8081/" frameborder="0" width="1920" height="500"></iframe>
+<div style="color:white;">This page will reload in <span id="cnt" style="color:red;">300</span> Seconds</div>
 </body>
 </html>
