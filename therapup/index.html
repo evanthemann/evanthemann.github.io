@@ -4,13 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>The Rap Up</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
-  <iframe src="https://open.spotify.com/embed/playlist/6oxQLYaI3scejzvII5p08I?utm_source=generator&theme=0" width="480" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-  <br><br>
-  <iframe src="https://open.spotify.com/embed/playlist/2Dqv2qL8tHY4MItk1IqFxC?utm_source=generator&theme=0" width="480" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-  <br><br>
-  <iframe src="https://open.spotify.com/embed/playlist/41OfF5KJXaSywYbouHlFlo?utm_source=generator&theme=0" width="480" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+  <div class="w3-container">
+    <h1>The Rap Up</h1>
+  </div>
+
+  <div class="w3-container">
+    <!-- Trigger/Open the Modal -->
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green">Playlist 1</button>
+  </div>
+  <br>
+
+  <!-- The Modal -->
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container w3-padding-64 w3-center">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <iframe src="https://open.spotify.com/embed/playlist/6oxQLYaI3scejzvII5p08I?utm_source=generator&theme=0" width="480" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container">
+    <!-- Trigger/Open the Modal -->
+    <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-green">Playlist 2</button>
+  </div>
+  <br>
+
+  <!-- The Modal -->
+  <div id="id02" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container w3-padding-64 w3-center">
+        <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+          <iframe src="https://open.spotify.com/embed/playlist/2Dqv2qL8tHY4MItk1IqFxC?utm_source=generator&theme=0" width="480" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container">
+    <!-- Trigger/Open the Modal -->
+    <button onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-green">Playlist 3</button>
+  </div>
+  <br>
+
+  <!-- The Modal -->
+  <div id="id03" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container w3-padding-64 w3-center">
+        <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+          <iframe src="https://open.spotify.com/embed/playlist/41OfF5KJXaSywYbouHlFlo?utm_source=generator&theme=0" width="480" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
