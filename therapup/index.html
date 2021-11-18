@@ -6,19 +6,56 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>The Rap Up</title>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+  body,h1 {font-family: "Raleway", sans-serif}
+  body, html {height: 100%}
+  .bgimg {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('https://images2.imgbox.com/d4/3c/DxbMax2n_o.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+  </style>
 </head>
 <body>
-  <div class="w3-container">
-    <h1>The Rap Up</h1>
+
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <div class="w3-display-middle">
+      <h1 class="w3-jumbo w3-animate-top">THE RAP UP</h1>
+      <hr class="w3-border-grey" style="margin:auto;width:40%">
+      <p class="w3-large w3-center">A radio show at Emerson College, 2011 & 2014</p>
+    </div>
   </div>
 
-  <div class="w3-container">
-    <!-- Trigger/Open the Modal -->
-    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green">Playlist 1</button>
+  <!-- Info Section -->
+  <div class="w3-container w3-content w3-center" style="max-width:800px" id="band">
+    <h2 class="w3-wide">PAST TO PRESENT</h2>
+    <p class="w3-opacity"><i>What is The Rap Up?</i></p>
+    <p class="w3-justify">The Rap Up is a radio show hosted by DJ Evan the Mann in 2011 and then again in 2014, showcasing hip hop from past to present.</p>
   </div>
-  <br>
 
-  <!-- The Modal -->
+  <div class="w3-container w3-content" style="max-width:800px">
+    <div class="w3-row-padding">
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-container w3-white w3-center">
+          <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green">Playlist 1</button>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-container w3-white w3-center">
+          <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-green">Playlist 2</button>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-container w3-white w3-center">
+          <button onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-green">Playlist 3</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal 1 -->
   <div id="id01" class="w3-modal">
     <div class="w3-modal-content">
       <div class="w3-container w3-padding-64 w3-center">
@@ -28,13 +65,7 @@
     </div>
   </div>
 
-  <div class="w3-container">
-    <!-- Trigger/Open the Modal -->
-    <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-green">Playlist 2</button>
-  </div>
-  <br>
-
-  <!-- The Modal -->
+  <!-- The Modal 2 -->
   <div id="id02" class="w3-modal">
     <div class="w3-modal-content">
       <div class="w3-container w3-padding-64 w3-center">
@@ -44,13 +75,9 @@
     </div>
   </div>
 
-  <div class="w3-container">
-    <!-- Trigger/Open the Modal -->
-    <button onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-green">Playlist 3</button>
-  </div>
-  <br>
 
-  <!-- The Modal -->
+
+  <!-- The Modal 3-->
   <div id="id03" class="w3-modal">
     <div class="w3-modal-content">
       <div class="w3-container w3-padding-64 w3-center">
@@ -59,6 +86,20 @@
       </div>
     </div>
   </div>
+
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <script>
+
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('id01');
+  window.onclick =F function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
 
 </body>
 </html>
