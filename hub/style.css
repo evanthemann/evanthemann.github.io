@@ -1,3 +1,11 @@
 .w3-sourceSerifPro {
   font-family: "Source Serif Pro", serif;
 }
+
+button {
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 10px;
+}
