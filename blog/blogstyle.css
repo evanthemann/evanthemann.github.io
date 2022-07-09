@@ -37,3 +37,15 @@ body, html {
 .w3-card-4 {
   margin-top: 20px;
 }
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.articleImage {
+  max-height: 360px;
+}
