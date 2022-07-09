@@ -46,6 +46,6 @@ body, html {
     transform: rotate(90deg);
 }
 
-.articleImage {
-  max-height: 360px;
+.articleImageThumb {
+  height: 200px;
 }
