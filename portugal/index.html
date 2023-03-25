@@ -9,74 +9,120 @@
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
 
 </head>
-<body>
+<body onload="closeSidebar()">
 
-    <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
-        <div class="w3-container w3-theme-d2">
-          <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
-          <br>
-          <div class="w3-padding w3-center">
-            <img class="w3-circle" src="img_avatar.jpg" alt="avatar" style="width:75%">
-          </div>
-        </div>
-        <a class="w3-bar-item w3-button" href="#">Timeline</a>
-        <a class="w3-bar-item w3-button" href="#">Flights</a>
-        <a class="w3-bar-item w3-button" href="#">Hotels</a>
-        </nav>
+<div w3-include-html="navHeader.html"></div>
+
+<!-- <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+  <div class="w3-container w3-theme-d2">
+    <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+    <br>
+    <div class="w3-padding w3-center">
+      <img class="w3-circle" src="https://images.unsplash.com/photo-1536663815808-535e2280d2c2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cG9ydHVnYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" alt="avatar" style="width:75%">
+    </div>
+  </div>
+  <a class="w3-bar-item w3-button" href="#">Timeline</a>
+  <a class="w3-bar-item w3-button" href="#">Flights</a>
+  <a class="w3-bar-item w3-button" href="#">Hotels</a>
+</nav>
+      
+<header class="w3-top w3-bar w3-theme">
+  <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
+  <a href="#"><h1 class="w3-bar-item">Portugal</h1></a>
+</header>-->
         
-        <header class="w3-top w3-bar w3-theme">
-          <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
-          <h1 class="w3-bar-item">Portugal</h1>
-        </header>
-        
-        <div class="w3-container" style="margin-top:90px">
-        <hr>
-        <div class="w3-cell-row">
-          <div class="w3-cell" style="width:30%">
-            <img class="w3-circle" src="img_avatar.jpg" style="width:100%">
-          </div>
-          <div class="w3-cell w3-container">
-            <h3>Timeline</h3>
-            <p>What and when.</p>
-          </div>
-        </div>  
-        <hr>
-        <div class="w3-cell-row">
-          <div class="w3-cell" style="width:30%">
-            <img class="w3-circle" src="img_avatar.jpg" style="width:100%">
-          </div>
-          <div class="w3-cell w3-container">
-            <h3>Flights</h3>
-            <p>Flight info.</p>
-          </div>
-        </div>
-        <hr>
-        <div class="w3-cell-row">
-          <div class="w3-cell" style="width:30%">
-            <img class="w3-circle" src="img_avatar.jpg" style="width:100%">
-          </div>
-          <div class="w3-cell w3-container">
-            <h3>The Avengers</h3>
-            <p>A huge success for Marvel and Disney.</p>
-          </div>
-        </div>
-        <hr>
-        </div>
-        
-        <footer class="w3-container w3-bottom w3-theme w3-margin-top">
-          <h3>Footer</h3>
-        </footer>
-        
-        <script>
-        closeSidebar();
-        function openSidebar() {
-          document.getElementById("mySidebar").style.display = "block";
+  <div class="w3-container" style="margin-top:90px">
+  <hr>
+  <a href="#">
+    <div class="w3-cell-row">
+      <div class="w3-cell" style="width:30%">
+        <img class="w3-circle" src="https://images.unsplash.com/photo-1585208798174-6cedd86e019a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGlzYm9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" style="width:100%">
+      </div>
+      <div class="w3-cell w3-container">
+        <h3>Lisbon</h3>
+        <p>What and when.</p>
+      </div>
+    </div>
+  </a>  
+  <hr>
+  <a href="#">
+    <div class="w3-cell-row">
+      <div class="w3-cell" style="width:30%">
+        <img class="w3-circle" src="https://images.unsplash.com/photo-1635893312205-6abda7db17a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29pbWJyYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60" style="width:100%">
+      </div>
+      <div class="w3-cell w3-container">
+        <h3>Coimbra</h3>
+        <p>Flight info.</p>
+      </div>
+    </div>
+  </a>
+  <hr>
+  <a href="#">
+  <div class="w3-cell-row">
+    <div class="w3-cell" style="width:30%">
+      <img class="w3-circle" src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cG9ydG8lMjBwb3J0dWdhbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60" style="width:100%">
+    </div>
+    <div class="w3-cell w3-container">
+      <h3>Porto</h3>
+      <p>A huge success for Marvel and Disney.</p>
+    </div>
+  </div>
+  </a>
+  <hr>
+  </div>
+      
+  <div w3-include-html="footer.html"></div>
+
+  <!-- <footer class="w3-container w3-bottom w3-theme w3-margin-top">
+    <h3>June 2023</h3>
+  </footer> -->
+
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
         }
-        
-        function closeSidebar() {
-          document.getElementById("mySidebar").style.display = "none";
-        }
-        </script>
+      }
+    }
+    
+    includeHTML();
+
+    function openSidebar() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+    
+    function closeSidebar() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+
+    closeSidebar();
+
+    document.onload = document.getElementById("mySidebar").style.display = "none";
+
+    window.onload = document.getElementById("mySidebar").style.display = "none";
+
+  </script>
     
 </body>
 </html>

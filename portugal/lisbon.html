@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lisbon</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+
+  <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+      <div class="w3-container w3-theme-d2">
+        <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+        <br>
+        <div class="w3-padding w3-center">
+          <img class="w3-circle" src="https://images.unsplash.com/photo-1536663815808-535e2280d2c2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cG9ydHVnYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" alt="avatar" style="width:75%">
+        </div>
+      </div>
+      <a class="w3-bar-item w3-button" href="#">Timeline</a>
+      <a class="w3-bar-item w3-button" href="#">Flights</a>
+      <a class="w3-bar-item w3-button" href="#">Hotels</a>
+  </nav>
+        
+  <header class="w3-top w3-bar w3-theme">
+    <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
+    <a href="index.html"><h1 class="w3-bar-item">Portugal</h1></a>
+  </header>
+        
+  <div class="w3-container" style="margin-top:90px">
+  <hr>
+  <h1>Lisbon</h1>
+  <h3><i class="fa-solid fa-calendar"></i> Sat, June 17 – Tues, June 20</h3>
+  
+
+  <hr>
+  </div>
+        
+  <footer class="w3-container w3-bottom w3-theme w3-margin-top">
+    <h3>June 2023</h3>
+  </footer>
+        
+  <script>
+  closeSidebar();
+  function openSidebar() {
+    document.getElementById("mySidebar").style.display = "block";
+  }
+  
+  function closeSidebar() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+  </script>
+    
+</body>
+</html>
