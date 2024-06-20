@@ -609,7 +609,7 @@ nav.fixed-top .nav-item .nav-link:before {
 
 .nachol-promo-area {
 	padding: 100px 0;
-	background: url(../img/promo_bg.jpg) no-repeat fixed 0 0/cover;
+	background: url(../../img/bluegradient.png) no-repeat fixed 0 0/cover;
 	position: relative;
 	z-index: 1
 }
