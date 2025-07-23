@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Evan Mann | Digital Creator & Marketer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .hero {
+      background: url('https://placehold.co/1200x600') center center/cover no-repeat;
+      height: 100vh;
+      color: gray;
+    }
+    .about-gif {
+      max-width: 250px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="w3-top w3-bar w3-black w3-card">
+  <a href="#" class="w3-bar-item w3-button w3-mobile w3-padding-large">Home</a>
+  <a href="#about" class="w3-bar-item w3-button w3-mobile w3-padding-large">About</a>
+  <a href="#portfolio" class="w3-bar-item w3-button w3-mobile w3-padding-large">Digitization Services</a>
+  <a href="#products" class="w3-bar-item w3-button w3-mobile w3-padding-large">YouTube</a>
+  <a href="#services" class="w3-bar-item w3-button w3-mobile w3-padding-large">wearbackshirt.com</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-mobile w3-padding-large">Blog</a> 
+  <a href="#contact" class="w3-bar-item w3-button w3-mobile w3-padding-large">Photography</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-mobile w3-padding-large">Contact</a>
+
+</div>
+
+<!-- Hero Section -->
+<header class="hero w3-display-container">
+  <div class="w3-display-middle w3-center">
+    <h1 class="w3-jumbo w3-animate-top">Hi, I’m Evan Mann</h1>
+    <p class="w3-xlarge">Creative Marketer • Video Pro • Builder of Useful Stuff</p>
+    <a href="#about" class="w3-button w3-white w3-large w3-margin-top">Learn More</a>
+  </div>
+</header>
+
+<!-- About Me Section -->
+<section id="about" class="w3-container w3-padding-64 w3-light-grey">
+  <div class="w3-row-padding w3-center">
+    <div class="w3-half w3-padding">
+      <img src="https://placehold.co/600x600" alt="Evan GIF" class="about-gif">
+    </div>
+    <div class="w3-half w3-padding">
+      <h2>About Me</h2>
+      <p>I’m a digital storyteller, email marketing expert, and hands-on builder who blends tech, video, and creativity.</p>
+      <button onclick="document.getElementById('aboutModal').style.display='block'" class="w3-button w3-blue">Watch Intro Video</button>
+      <br><br>
+      <a href="EvanMann_Resume.pdf" class="w3-button w3-dark-grey">Download Resume</a>
+    </div>
+  </div>
+</section>
+
+<!-- Modal Video -->
+<div id="aboutModal" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom w3-card-4">
+    <span onclick="document.getElementById('aboutModal').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright">&times;</span>
+    <div class="w3-container">
+      <h2>About This Site</h2>
+      <video controls style="width:100%">
+        <source src="about-video.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</div>
+
+<!-- Highlight Tiles -->
+<section class="w3-container w3-padding-64 w3-white" id="portfolio">
+  <h2 class="w3-center">Explore</h2>
+  <div class="w3-row-padding w3-center" style="margin-top:32px">
+    <div class="w3-quarter">
+      <a href="/digitization" class="w3-button w3-block w3-light-grey w3-padding-64">
+        <i class="fas fa-video w3-margin-bottom w3-margin-top" style="font-size: 24px;"></i><br>
+        <h3>YouTube Channels</h3>
+      </a>
+    </div>
+    <div class="w3-quarter">
+    <a href="/digitization" class="w3-button w3-block w3-light-grey w3-padding-64">
+        <i class="fas fa-photo-video w3-margin-bottom w3-margin-top" style="font-size: 24px;"></i><br>
+        <h3>Media Digitization</h3>
+    </a>
+    </div>
+    <div class="w3-quarter">
+    <a href="https://wearbackshirt.com" target="_blank" class="w3-button w3-block w3-light-grey w3-padding-64">
+        <i class="fas fa-tshirt w3-margin-bottom w3-margin-top" style="font-size: 24px;"></i><br>
+        <h3>WearBackShirt.com</h3>
+    </a>
+    </div>
+    <div class="w3-quarter">
+    <a href="/blog" class="w3-button w3-block w3-light-grey w3-padding-64">
+        <i class="fas fa-pen-nib w3-margin-bottom w3-margin-top" style="font-size: 24px;"></i><br>
+        <h3>Personal Blog</h3>
+    </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-black w3-center w3-padding-64">
+  <p>© 2025 Evan Mann | <a href="mailto:your@email.com">Contact Me</a></p>
+</footer>
+
+</body>
+</html>
