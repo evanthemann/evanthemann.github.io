@@ -7,9 +7,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     .hero {
-      background: url('https://placehold.co/1200x600') center center/cover no-repeat;
+    /*  background: url('https://placehold.co/1200x600') center center/cover no-repeat; */
+      background: url('https://i.postimg.cc/85ffZtjc/IMAG0003.jpg') center center/cover no-repeat;
       height: 100vh;
       color: gray;
+    }
+    .herotext {
+      color: whitesmoke;
     }
     .about-gif {
       max-width: 250px;
@@ -34,8 +38,8 @@
 <!-- Hero Section -->
 <header class="hero w3-display-container">
   <div class="w3-display-middle w3-center">
-    <h1 class="w3-jumbo w3-animate-top">Hi, I’m Evan Mann</h1>
-    <p class="w3-xlarge">Creative Marketer • Video Pro • Builder of Useful Stuff</p>
+    <h1 class="w3-jumbo w3-animate-top w3-wide herotext">Hi, I’m Evan Mann</h1>
+    <p class="w3-xlarge herotext">Digital Marketer • Video Editor • Self Taught Coder</p>
     <a href="#about" class="w3-button w3-white w3-large w3-margin-top">Learn More</a>
   </div>
 </header>
@@ -44,12 +48,13 @@
 <section id="about" class="w3-container w3-padding-64 w3-light-grey">
   <div class="w3-row-padding w3-center">
     <div class="w3-half w3-padding">
-      <img src="https://placehold.co/600x600" alt="Evan GIF" class="about-gif">
+      <!-- <img src="https://placehold.co/600x600" alt="Evan GIF" class="about-gif"><br><br> -->
+      <img src="https://i.postimg.cc/VkpcwRKX/IMAG0022.jpg" alt="Evan GIF" class="about-gif" ><br><br>
+      <button onclick="document.getElementById('aboutModal').style.display='block'" class="w3-button w3-blue">Watch Intro Video</button>
     </div>
     <div class="w3-half w3-padding">
       <h2>About Me</h2>
-      <p>I’m a digital storyteller, email marketing expert, and hands-on builder who blends tech, video, and creativity.</p>
-      <button onclick="document.getElementById('aboutModal').style.display='block'" class="w3-button w3-blue">Watch Intro Video</button>
+      <p>My professional journey began in film school, where I learned the art of visual storytelling. From there, I stepped into internal communications at a global software company, helping teams connect through video, messaging, and strategy. That foundation led me into broader digital marketing—where I found a passion for combining data with creativity to drive engagement. Today, I lead email campaigns and manage marketing automation tools at CAPTRUST, delivering clear, targeted messages to the right people at the right time.</p>
       <br><br>
       <a href="EvanMann_Resume.pdf" class="w3-button w3-dark-grey">Download Resume</a>
     </div>
