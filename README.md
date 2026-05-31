@@ -16,7 +16,6 @@ A static HTML/CSS/JS site with no build step, served via **GitHub Pages** from t
 | Path | What it is |
 |------|------------|
 | `index.html` | Homepage — hero, About Me, link tiles |
-| `blog/` | Blog posts + previews |
 | `videos/` | Video reels (includes `sasvideos/` and `movieamonth/`) |
 | `digitize/` | Media digitization page |
 | `therapup/` | The Rap Up |
