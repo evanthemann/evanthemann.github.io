@@ -1,0 +1,6 @@
+# macOS
+.DS_Store
+*.DS_Store
+
+# Private planning notes (not for the public site)
+note-for-claude.md
