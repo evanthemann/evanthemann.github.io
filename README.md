@@ -19,35 +19,20 @@ A static HTML/CSS/JS site with no build step, served via **GitHub Pages** from t
 | `blog/` | Blog posts + previews |
 | `videos/` | Video reels (includes `sasvideos/` and `movieamonth/`) |
 | `digitize/` | Media digitization page |
-| `channels/` | Channels page |
 | `therapup/` | The Rap Up |
 | `css/`, `img/` | Styles and images |
 | `CNAME` | Custom-domain config for GitHub Pages |
 
-## Local development
-
-```bash
-# from the repo root
-python3 -m http.server 8000 --bind 127.0.0.1
-# then open http://localhost:8000/
-```
-
-Or use the VS Code **Live Server** extension (port 5501, per `.vscode/settings.json`).
-
 ## Roadmap
 
 **Polish**
-- [ ] Photography page
-- [ ] Portfolio page
-- [ ] Add the "About" intro video (homepage references a missing `about-video.mp4`)
 - [ ] Consolidate / modernize styling across sub-pages
-- [ ] Favicon + meta/OpenGraph tags on the homepage
+- [ ] Add a favicon (browser-tab icon) and social/search preview tags (page title, description,
+      and share-card image for when links are shared)
 
 **Bigger projects**
 - [ ] Flesh out the Media Digitization page
-- [ ] Local SEO: "develop black-and-white film Raleigh", "develop super 8 film Raleigh",
-      "develop camera film Raleigh"
+- [ ] Optimize SEO for local discovery of services
 - [ ] Low-cost, open-source / native form-submission flow with spam protection
-- [ ] Cross-link Blog / WearBackShirt / Digitize services
 - [ ] Advertise media consultant services
 - [ ] Improve how the YouTube channel is showcased
