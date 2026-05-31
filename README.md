@@ -19,8 +19,9 @@ These two goals guide every content and design decision here:
 - Plain HTML / CSS / JS — no framework, no build tooling.
 - The current homepage (`index.html`) uses [W3.CSS](https://www.w3schools.com/w3css/) +
   Font Awesome.
-- A legacy theme (Bootstrap, jQuery, Owl Carousel, Magnific Popup, etc.) lives in `assets/` and
-  is used by some older sub-pages.
+- All third-party libraries (W3.CSS, Font Awesome, and the Bootstrap/jQuery/Owl Carousel libs
+  used by some older sub-pages) are loaded from CDNs — there are no vendored library files in the
+  repo.
 
 ## Structure
 
