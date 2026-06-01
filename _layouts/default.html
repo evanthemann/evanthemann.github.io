@@ -58,6 +58,7 @@
   // Initialize each migrated slideshow. The Jetpack markup already includes the
   // .swiper-wrapper/.swiper-slide and nav/pagination elements Swiper needs.
   document.querySelectorAll('.wp-block-jetpack-slideshow_container').forEach(function (el) {
+    el.classList.add('swiper'); // Swiper v11 styles the .swiper root (viewport/clipping); Jetpack used the old .swiper-container
     new Swiper(el, {
       loop: true,
       navigation: {
