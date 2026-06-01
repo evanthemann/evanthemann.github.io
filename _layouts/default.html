@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}Evan Mann</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body { font-family: "Helvetica Neue", sans-serif; }
+    .blog-wrap { max-width: 760px; margin: auto; }
+    .post-meta { color: #757575; }
+    article img { max-width: 100%; height: auto; }
+  </style>
+</head>
+<body>
+
+<!-- Navigation (matches the rest of the site) -->
+<div class="w3-top w3-bar w3-black w3-card">
+  <a href="/" class="w3-bar-item w3-button w3-mobile w3-padding-large">Home</a>
+  <a href="/blog/" class="w3-bar-item w3-button w3-mobile w3-padding-large w3-blue">Blog</a>
+  <a href="/contact/" class="w3-bar-item w3-button w3-mobile w3-padding-large">Contact</a>
+</div>
+
+<div style="margin-top:44px;">
+  {{ content }}
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-black w3-center w3-padding-64">
+  <p>© 2025 Evan Mann | <a href="/">Home</a> · <a href="/contact/">Contact</a></p>
+</footer>
+
+</body>
+</html>

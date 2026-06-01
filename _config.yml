@@ -1,0 +1,13 @@
+# Jekyll config — scopes the blog without touching the rest of the hand-written site.
+# Existing HTML pages have no front matter, so Jekyll copies them through unchanged.
+title: Evan Mann
+description: Notes on video, media, and automation by Evan Mann.
+url: https://evanlmann.com
+
+# Blog posts live in _posts/ and are published at /blog/<post-name>/
+permalink: /blog/:title/
+
+# Don't render repo docs as web pages
+exclude:
+  - README.md
+  - .gitignore

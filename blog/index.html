@@ -1,0 +1,22 @@
+---
+layout: default
+title: Blog
+description: Notes on video, media, and automation by Evan Mann.
+---
+<header class="w3-container w3-padding-64 w3-center w3-light-grey">
+  <h1 class="w3-jumbo">Blog</h1>
+  <p class="w3-large w3-text-grey">Notes on video, media, and automation.</p>
+</header>
+
+<section class="w3-container w3-padding-32">
+  <div class="blog-wrap">
+    {% for post in site.posts %}
+    <div class="w3-padding-16 w3-border-bottom">
+      <h2 class="w3-margin-bottom"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+      <p>{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+      <a href="{{ post.url }}" class="w3-button w3-light-grey w3-round">Read more</a>
+    </div>
+    {% endfor %}
+  </div>
+</section>

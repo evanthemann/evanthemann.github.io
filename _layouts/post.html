@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<section class="w3-container w3-padding-32">
+  <div class="blog-wrap">
+    <a href="/blog/" class="w3-text-grey">&larr; All posts</a>
+    <h1 class="w3-margin-top">{{ page.title }}</h1>
+    <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}</p>
+
+    <article class="w3-large">
+      {{ content }}
+    </article>
+
+    <hr>
+    <p class="w3-text-grey">Questions, or want to work together?
+      <a href="/contact/">Get in touch</a>.</p>
+  </div>
+</section>
