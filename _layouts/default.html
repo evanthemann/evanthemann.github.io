@@ -15,6 +15,24 @@
     .post-meta { color: #757575; }
     article img { max-width: 100%; height: auto; }
   </style>
+
+  {% if page.swiper %}
+  <!-- Swiper: rebuilds the migrated WordPress/Jetpack slideshows on the static site -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <style>
+    .wp-block-jetpack-slideshow { margin: 1.5em 0; }
+    .wp-block-jetpack-slideshow_image {
+      width: 100%; height: 65vh; max-height: 600px;
+      object-fit: contain; background: #000; display: block;
+    }
+    .wp-block-jetpack-slideshow .swiper-slide {
+      display: flex; align-items: center; justify-content: center;
+    }
+    .wp-block-jetpack-slideshow .swiper-button-next,
+    .wp-block-jetpack-slideshow .swiper-button-prev { color: #fff; }
+    .wp-block-jetpack-slideshow_button-pause { display: none; }
+  </style>
+  {% endif %}
 </head>
 <body>
 
@@ -33,6 +51,27 @@
 <footer class="w3-container w3-black w3-center w3-padding-64">
   <p>© 2025 Evan Mann | <a href="/">Home</a> · <a href="/contact/">Contact</a></p>
 </footer>
+
+{% if page.swiper %}
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  // Initialize each migrated slideshow. The Jetpack markup already includes the
+  // .swiper-wrapper/.swiper-slide and nav/pagination elements Swiper needs.
+  document.querySelectorAll('.wp-block-jetpack-slideshow_container').forEach(function (el) {
+    new Swiper(el, {
+      loop: true,
+      navigation: {
+        nextEl: el.querySelector('.swiper-button-next'),
+        prevEl: el.querySelector('.swiper-button-prev')
+      },
+      pagination: {
+        el: el.querySelector('.swiper-pagination'),
+        clickable: true
+      }
+    });
+  });
+</script>
+{% endif %}
 
 </body>
 </html>
