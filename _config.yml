@@ -7,6 +7,10 @@ url: https://evanlmann.com
 # Blog posts live in _posts/ and are published at /blog/<post-name>/
 permalink: /blog/:title/
 
+# Keep the blog out of search results until it's ready to launch.
+# Flip to false (or remove) to allow indexing.
+blog_noindex: true
+
 # Don't render repo docs as web pages
 exclude:
   - README.md

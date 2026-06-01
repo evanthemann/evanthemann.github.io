@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>{% if page.title %}{{ page.title }} | {% endif %}Evan Mann</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if site.blog_noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
   {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
 
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
