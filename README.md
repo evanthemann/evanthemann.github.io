@@ -18,6 +18,7 @@ A static HTML/CSS/JS site with no build step, served via **GitHub Pages** from t
 | `index.html` | Homepage — hero, About Me, link tiles |
 | `videos/` | Video reels (includes `sasvideos/` and `movieamonth/`) |
 | `digitize/` | Media digitization page |
+| `contact/` | Contact / service-request form (Web3Forms) |
 | `therapup/` | The Rap Up |
 | `css/`, `img/` | Styles and images |
 | `CNAME` | Custom-domain config for GitHub Pages |
@@ -32,6 +33,8 @@ A static HTML/CSS/JS site with no build step, served via **GitHub Pages** from t
 **Bigger projects**
 - [ ] Flesh out the Media Digitization page
 - [ ] Optimize SEO for local discovery of services
-- [ ] Low-cost, open-source / native form-submission flow with spam protection
+- [x] Low-cost, native form-submission flow with spam protection — `/contact` uses
+      [Web3Forms](https://web3forms.com) (free, no backend) with a honeypot + hCaptcha. Future
+      upgrade path: a self-owned Cloudflare Worker + Turnstile + email API (e.g. Resend).
 - [ ] Advertise media consultant services
 - [ ] Improve how the YouTube channel is showcased

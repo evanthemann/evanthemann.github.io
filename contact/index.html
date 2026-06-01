@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Evan Mann | Media Digitizing, Film Developing & Consulting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Get in touch with Evan Mann for hobby-grade media digitizing (8mm, Super 8, Hi-8, VHS), film developing, and personal media consulting (Jellyfin setup) in the Raleigh area.">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body { font-family: "Helvetica Neue", sans-serif; }
+    .form-wrap { max-width: 640px; margin: auto; }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="w3-top w3-bar w3-black w3-card">
+  <a href="/" class="w3-bar-item w3-button w3-mobile w3-padding-large">Home</a>
+  <a href="/contact/" class="w3-bar-item w3-button w3-mobile w3-padding-large w3-blue">Contact</a>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-padding-64 w3-center w3-light-grey" style="margin-top:44px;">
+  <h1 class="w3-jumbo">Get in touch</h1>
+  <p class="w3-large w3-text-grey">
+    Questions about media digitizing, film developing, or setting up your own private media
+    server? Send a note and I'll get back to you.
+  </p>
+</header>
+
+<!-- Contact Form -->
+<section class="w3-container w3-padding-64">
+  <div class="form-wrap">
+
+    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+
+      <!-- Web3Forms access key (public by design). Replace with your key from web3forms.com -->
+      <input type="hidden" name="access_key" value="d845e49b-6041-4222-8c7f-64d746902fdc">
+      <input type="hidden" name="subject" value="New service request from evanlmann.com">
+      <input type="hidden" name="from_name" value="evanlmann.com contact form">
+
+      <!-- Honeypot: hidden field bots tend to fill in -->
+      <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
+
+      <label class="w3-text-dark-grey"><b>Name</b></label>
+      <input class="w3-input w3-border w3-margin-bottom" type="text" name="name" required>
+
+      <label class="w3-text-dark-grey"><b>Email</b></label>
+      <input class="w3-input w3-border w3-margin-bottom" type="email" name="email" required>
+
+      <label class="w3-text-dark-grey"><b>What can I help with?</b></label>
+      <select class="w3-select w3-border w3-margin-bottom" name="service" required>
+        <option value="" disabled selected>Choose a service…</option>
+        <option value="Media Digitization">Media Digitization (8mm, Super 8, Hi-8, VHS)</option>
+        <option value="Film Developing">Film Developing</option>
+        <option value="Media Consulting">Media Consulting (Jellyfin / private server setup)</option>
+        <option value="Other">Something else</option>
+      </select>
+
+      <label class="w3-text-dark-grey"><b>Message</b></label>
+      <textarea class="w3-input w3-border w3-margin-bottom" name="message" rows="5" required></textarea>
+
+      <!-- hCaptcha (uses Web3Forms' built-in keys via their client script) -->
+      <div class="h-captcha w3-margin-bottom" data-captcha="true"></div>
+
+      <button type="submit" class="w3-button w3-blue w3-large w3-round-large">
+        <i class="fas fa-paper-plane"></i>&nbsp; Send
+      </button>
+    </form>
+
+    <!-- Inline result message -->
+    <div id="formResult" class="w3-panel w3-hide w3-margin-top"></div>
+
+    <!-- Fallback contact -->
+    <p class="w3-text-grey w3-margin-top">
+      Prefer email or phone?
+      <a href="mailto:evanmann92@gmail.com">evanmann92@gmail.com</a> ·
+      <a href="tel:+19194341623">+1-919-434-1623</a>
+    </p>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-black w3-center w3-padding-64">
+  <p>© 2025 Evan Mann | <a href="/">Home</a> · <a href="mailto:evanmann92@gmail.com">Contact Me</a></p>
+</footer>
+
+<!-- Web3Forms client script: enables the hCaptcha widget above -->
+<script src="https://web3forms.com/client/script.js" async defer></script>
+
+<!-- Inline AJAX submit: shows success/error without a page reload.
+     Degrades to a normal POST (Web3Forms' own success page) if JS is disabled. -->
+<script>
+  const form = document.getElementById('contactForm');
+  const result = document.getElementById('formResult');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const submitBtn = form.querySelector('button[type="submit"]');
+
+    submitBtn.disabled = true;
+    result.className = 'w3-panel w3-pale-yellow w3-leftbar w3-border-yellow w3-margin-top';
+    result.innerHTML = 'Sending…';
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: data
+    })
+      .then(async (response) => {
+        const json = await response.json();
+        if (response.ok && json.success) {
+          result.className = 'w3-panel w3-pale-green w3-leftbar w3-border-green w3-margin-top';
+          result.innerHTML = 'Thanks — your message is on its way. I\'ll be in touch soon.';
+          form.reset();
+        } else {
+          result.className = 'w3-panel w3-pale-red w3-leftbar w3-border-red w3-margin-top';
+          result.innerHTML = json.message || 'Something went wrong. Please email evanmann92@gmail.com.';
+        }
+      })
+      .catch(() => {
+        result.className = 'w3-panel w3-pale-red w3-leftbar w3-border-red w3-margin-top';
+        result.innerHTML = 'Network error. Please email evanmann92@gmail.com.';
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+      });
+  });
+</script>
+
+</body>
+</html>
