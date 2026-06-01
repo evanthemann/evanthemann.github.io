@@ -37,4 +37,7 @@ A static HTML/CSS/JS site with no build step, served via **GitHub Pages** from t
       [Web3Forms](https://web3forms.com) (free, no backend) with a honeypot + hCaptcha. Future
       upgrade path: a self-owned Cloudflare Worker + Turnstile + email API (e.g. Resend).
 - [ ] Advertise media consultant services
+- [ ] Revisit the unpublished "Back Up Media" draft (`digitize/index2.html`) — a private-cloud /
+      Jellyfin hosting landing page. Consolidate it into the site: give it a proper path + matching
+      nav/footer, wire its pricing CTAs to `/contact`, and fold it into the consultant-services story.
 - [ ] Improve how the YouTube channel is showcased
