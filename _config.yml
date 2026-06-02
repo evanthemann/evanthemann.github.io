@@ -9,7 +9,7 @@ permalink: /blog/:title/
 
 # Keep the blog out of search results until it's ready to launch.
 # Flip to false (or remove) to allow indexing.
-blog_noindex: true
+blog_noindex: false
 
 # Don't render repo docs as web pages
 exclude:
