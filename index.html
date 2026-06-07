@@ -23,10 +23,17 @@
 <body>
 
 <!-- Navigation -->
-<div class="w3-top w3-bar w3-black w3-card">
-  <a href="#" class="w3-bar-item w3-button w3-mobile w3-padding-large">Home</a>
-  <a href="/blog/" class="w3-bar-item w3-button w3-mobile w3-padding-large">Blog</a>
-  <a href="/contact/" class="w3-bar-item w3-button w3-mobile w3-padding-large">Contact</a>
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="/blog/" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Blog</a>
+    <a href="/contact/" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-medium w3-hide-large" onclick="toggleNav()" title="Toggle Navigation Menu">&#9776;</a>
+  </div>
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-medium w3-hide-large">
+    <a href="/blog/" class="w3-bar-item w3-button w3-padding-large">Blog</a>
+    <a href="/contact/" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+  </div>
 </div>
 
 <!-- Hero Section -->
@@ -48,9 +55,9 @@
     </div>
     <div class="w3-half w3-padding">
       <h2>About Me</h2>
-      <p>My professional journey began in film school, where I learned the art of visual storytelling. From there, I moved into internal communications at a global software company, helping teams connect through video, messaging, and strategic communication. That foundation led me into digital marketing and marketing operations, where I discovered a passion for combining data, systems, and creativity to drive growth. Today, I work as a Marketing Automation Manager at JCI, where I focus on building scalable marketing operations, supporting go-to-market strategy, and ensuring the right leads, messages, and insights reach the business at the right time.</p>
+      <p>My professional journey began in film school, where I learned the art of visual storytelling. From there, I moved into internal communications at a global software company, helping teams connect through video, messaging, and strategic communication. That foundation led me into digital marketing and marketing operations, where I discovered a passion for combining data, systems, and creativity to drive growth. Today, I work as a Campaign Marketing Sr Specialist at Johnson Controls, where I focus on building scalable marketing operations, supporting go-to-market strategy, and ensuring the right leads, messages, and insights reach the business at the right time.</p>
       <br><br>
-      <a href="https://www.linkedin.com/in/evanmann92/" class="w3-button w3-dark-grey">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/evanlmann/" class="w3-button w3-dark-grey">LinkedIn</a>
     </div>
   </div>
 </section>
@@ -101,8 +108,18 @@
 
 <!-- Footer -->
 <footer class="w3-container w3-black w3-center w3-padding-64">
-  <p>© 2026 Evan Mann | <a href="/contact/">Contact</a> · <a href="mailto:evanmann92@gmail.com">Email Me</a></p>
+  <p>© <span class="yr">2026</span> Evan Mann | <a href="/contact/">Contact</a> · <a href="mailto:evanmann92@gmail.com">Email Me</a></p>
 </footer>
+
+<script>
+  // auto-updating footer year + responsive nav toggle
+  document.querySelectorAll('.yr').forEach(function (e) { e.textContent = new Date().getFullYear(); });
+  function toggleNav() {
+    var x = document.getElementById('navDemo');
+    if (x.className.indexOf('w3-show') === -1) { x.className += ' w3-show'; }
+    else { x.className = x.className.replace(' w3-show', ''); }
+  }
+</script>
 
 </body>
 </html>

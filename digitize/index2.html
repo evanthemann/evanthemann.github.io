@@ -157,8 +157,10 @@
 
 <!-- FOOTER -->
 <footer class="w3-center w3-padding-48 w3-dark-grey">
-    <p>© 2026 Back Up Media — Private. Accessible. Yours.</p>
+    <p>© <span class="yr">2026</span> Back Up Media — Private. Accessible. Yours.</p>
 </footer>
+
+<script>document.querySelectorAll('.yr').forEach(function (e) { e.textContent = new Date().getFullYear(); });</script>
 
 </body>
 </html>
