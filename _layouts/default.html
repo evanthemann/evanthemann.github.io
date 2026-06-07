@@ -15,6 +15,27 @@
     .blog-wrap { max-width: 760px; margin: auto; }
     .post-meta { color: #757575; }
     article img { max-width: 100%; height: auto; }
+    /* keep the fixed nav above Swiper's positioned slides/controls */
+    .w3-top { z-index: 1000; }
+
+    /* Blog index cards: optional featured thumbnail left of title/excerpt */
+    .blog-card {
+      display: flex; gap: 20px; align-items: flex-start;
+      padding: 20px 0; border-bottom: 1px solid #e0e0e0;
+      text-decoration: none; color: inherit;
+    }
+    .blog-card:hover .blog-card-title { text-decoration: underline; }
+    .blog-card-thumb {
+      flex: 0 0 auto; width: 220px; height: 220px;
+      object-fit: cover; border-radius: 8px; background: #eee; display: block;
+    }
+    .blog-card-body { flex: 1 1 auto; min-width: 0; }
+    .blog-card-title { margin: 0 0 6px; }
+    .blog-card-readmore { color: #0b7a4b; font-weight: bold; }
+    @media (max-width: 600px) {
+      .blog-card { flex-direction: column; gap: 12px; }
+      .blog-card-thumb { width: 100%; height: 200px; }
+    }
   </style>
 
   {% if page.swiper %}
@@ -22,15 +43,25 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <style>
     .wp-block-jetpack-slideshow { margin: 1.5em 0; }
+    /* the wrapper is a <ul>/<li> — strip default list padding (40px) & bullets that shift slides right */
+    .wp-block-jetpack-slideshow_swiper-wrapper { margin: 0; padding: 0; list-style: none; }
+    .wp-block-jetpack-slideshow_slide { margin: 0; list-style: none; }
+    .wp-block-jetpack-slideshow figure { margin: 0; }   /* kill default figure margins that offset the photo */
     .wp-block-jetpack-slideshow_image {
-      width: 100%; height: 65vh; max-height: 600px;
-      object-fit: contain; background: #000; display: block;
+      max-width: 100%; max-height: 480px; width: auto; height: auto;
+      display: block; margin: 0 auto;                    /* shrink-to-fit, centered over the pagination dots */
     }
     .wp-block-jetpack-slideshow .swiper-slide {
       display: flex; align-items: center; justify-content: center;
     }
+    /* arrows: white glyph on a dark disc so they read over light photos too */
     .wp-block-jetpack-slideshow .swiper-button-next,
-    .wp-block-jetpack-slideshow .swiper-button-prev { color: #fff; }
+    .wp-block-jetpack-slideshow .swiper-button-prev {
+      color: #fff; background: rgba(0,0,0,.45);
+      width: 40px; height: 40px; border-radius: 50%;
+    }
+    .wp-block-jetpack-slideshow .swiper-button-next::after,
+    .wp-block-jetpack-slideshow .swiper-button-prev::after { font-size: 17px; font-weight: 700; }
     .wp-block-jetpack-slideshow_button-pause { display: none; }
   </style>
   {% endif %}
@@ -61,7 +92,11 @@
   document.querySelectorAll('.wp-block-jetpack-slideshow_container').forEach(function (el) {
     el.classList.add('swiper'); // Swiper v11 styles the .swiper root (viewport/clipping); Jetpack used the old .swiper-container
     new Swiper(el, {
-      loop: true,
+      // rewind (not loop) avoids cloned slides, whose lazy-loaded images measure as
+      // 0-width before load and shift every slide off-center; observers re-measure on load
+      rewind: true,
+      observer: true,
+      observeParents: true,
       navigation: {
         nextEl: el.querySelector('.swiper-button-next'),
         prevEl: el.querySelector('.swiper-button-prev')
