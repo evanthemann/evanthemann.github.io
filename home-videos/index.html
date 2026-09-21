@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Video Cloud — Watch Your Home Videos Anywhere | Evan Mann</title>
+  <meta name="description" content="I organize your home videos and host them on a private server, so you can pull up any memory on your phone, tablet, or TV — anywhere you are. Set up for you, start to finish.">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { font-family: Roboto, Arial, sans-serif; font-size: 18px; line-height: 1.65; }
+    h1, h2, h3, h4 { line-height: 1.2; }
+    .hero-h { font-size: clamp(32px, 6.4vw, 60px); margin: 0; }
+    .hero-sub { font-size: clamp(18px, 3vw, 26px); }
+    .sec-h { font-size: clamp(26px, 4.4vw, 40px); }
+    .lede { font-size: clamp(18px, 2.6vw, 24px); }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=2000&q=80') center center/cover no-repeat;
+      color: whitesmoke;
+    }
+    .wrap { max-width: 820px; margin: auto; }
+    .wrap-wide { max-width: 1100px; margin: auto; }
+    .step-num {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 54px; height: 54px; border-radius: 50%;
+      background: #009688; color: #fff; font-size: 26px; font-weight: bold;
+      flex: 0 0 54px;
+    }
+    .step { display: flex; gap: 22px; align-items: flex-start; margin-bottom: 34px; }
+    .step h3 { margin: 4px 0 6px; }
+    .price-card { height: 100%; }
+    .price-num { font-size: 40px; font-weight: bold; line-height: 1.1; }
+    .tier-badge { min-height: 28px; margin-bottom: 8px; }
+    .check { color: #009688; margin-right: 10px; }
+    @media (min-width: 601px) {
+      .tier-row { display: flex; align-items: stretch; }
+      .tier-row > .w3-third { display: flex; float: none; }
+      .tier-row > .w3-third > .price-card { width: 100%; }
+    }
+    @media (max-width: 600px) {
+      body { font-size: 17px; }
+      .step { gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a href="/" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="/blog/" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Blog</a>
+    <a href="/contact/" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-medium w3-hide-large" onclick="toggleNav()" title="Toggle Navigation Menu">&#9776;</a>
+  </div>
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-medium w3-hide-large">
+    <a href="/blog/" class="w3-bar-item w3-button w3-padding-large">Blog</a>
+    <a href="/contact/" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+  </div>
+</div>
+
+<!-- Hero -->
+<header class="hero w3-container w3-center w3-padding-64" style="padding-top:120px;">
+  <div class="wrap w3-padding-32">
+    <h1 class="hero-h"><b>Your home videos.<br>On any screen. Anywhere.</b></h1>
+    <p class="hero-sub w3-margin-top">I set it all up for you. You just press play.</p>
+    <a href="#start" class="w3-button w3-teal w3-xlarge w3-round-large w3-margin-top w3-padding-large">Get Started</a>
+  </div>
+</header>
+
+<!-- The hook -->
+<section class="w3-container w3-padding-64 w3-center">
+  <div class="wrap">
+    <h2 class="sec-h"><b>Got the whole family together?</b></h2>
+    <p class="lede">
+      Pull up the video of all of you from thirty years ago — on the TV, in about ten seconds.
+      Everyone watches it together, right then.
+    </p>
+    <p class="w3-large w3-text-grey">
+      That's the whole idea. Your home videos shouldn't be stuck on a dead laptop, an old hard drive
+      in a closet, or buried somewhere on your phone. They should be easy to find and easy to share,
+      wherever you happen to be.
+    </p>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="w3-container w3-padding-64 w3-light-grey">
+  <div class="wrap">
+    <h2 class="w3-center sec-h w3-margin-bottom"><b>How it works</b></h2>
+    <p class="w3-center w3-large w3-text-grey w3-margin-bottom" style="margin-bottom:48px;">
+      Three steps. I do almost all of it.
+    </p>
+
+    <div class="step">
+      <div class="step-num">1</div>
+      <div>
+        <h3><b>You send me your videos.</b></h3>
+        <p>
+          Mail me the hard drive, the old laptop, the memory cards — whatever they're on. If that
+          sounds easier, it usually is. We can also do it over the internet if you'd rather.
+          Either way, you get your things back.
+        </p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">2</div>
+      <div>
+        <h3><b>I organize and label everything.</b></h3>
+        <p>
+          This is the part nobody wants to do. I sort through it, name things properly, and put it
+          in order — so "Christmas 1994" is actually called Christmas 1994, and you can find it.
+          Then it goes onto a private server I own and take care of.
+        </p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">3</div>
+      <div>
+        <h3><b>You open an app and watch.</b></h3>
+        <p>
+          On your phone, your tablet, your computer, or your TV. It looks and works like Netflix,
+          except everything in it is yours. I get it working on your devices myself, and I'll show
+          you how to use it.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why me -->
+<section class="w3-container w3-padding-64">
+  <div class="wrap">
+    <h2 class="w3-center sec-h" style="margin-bottom:40px;"><b>Why do it this way?</b></h2>
+
+    <p class="w3-large"><i class="fa-solid fa-circle-check check"></i>
+      <b>It's private.</b> Your videos sit on a server I own and look after personally — not on a
+      giant company's computers. Nothing is scanned, sold, advertised against, or fed into AI.
+    </p>
+
+    <p class="w3-large"><i class="fa-solid fa-circle-check check"></i>
+      <b>It's backed up.</b> I keep a second copy in a separate location, so a broken drive or a
+      house fire doesn't lose anything. You keep your originals too — my copy is the convenient one,
+      never the only one.
+    </p>
+
+    <p class="w3-large"><i class="fa-solid fa-circle-check check"></i>
+      <b>It's actually organized.</b> Labeled, sorted, and searchable. A pile of files named
+      <span class="w3-text-grey">MOV_0472.mp4</span> isn't a memory you can share. A folder called
+      "Summer at the Lake, 1988" is.
+    </p>
+
+    <p class="w3-large"><i class="fa-solid fa-circle-check check"></i>
+      <b>You get a person, not a help desk.</b> I'm the one who sets it up, and I'm the one who
+      picks up the phone when something's confusing. No tickets, no chatbots, no hold music.
+    </p>
+
+    <p class="w3-large"><i class="fa-solid fa-circle-check check"></i>
+      <b>It works anywhere.</b> I work with people all over — everything can be handled by mail,
+      phone, and video call. You don't need me in your living room.
+    </p>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section id="pricing" class="w3-container w3-padding-64 w3-light-grey">
+  <div class="wrap-wide">
+    <h2 class="w3-center sec-h"><b>What it costs</b></h2>
+    <p class="w3-center w3-large w3-text-grey" style="margin-bottom:40px;">
+      No surprises. You'll know the full price before anything starts.
+    </p>
+
+    <!-- Step 1: intro -->
+    <div class="w3-card w3-white w3-round-large w3-padding-32 w3-center" style="margin-bottom:48px;">
+      <p class="w3-large w3-text-grey" style="margin:0;">Start here</p>
+      <h3 style="margin:8px 0;"><b>Intro Meeting</b></h3>
+      <div class="price-num w3-text-teal">$200</div>
+      <p class="w3-text-grey" style="margin:4px 0 0;">a 30-minute call</p>
+      <p class="w3-large" style="max-width:620px;margin:16px auto 0;">
+        We spend half an hour going through what you've got and what you want. Afterward I send you
+        a written plan and a <b>fixed price</b> for the setup — so you can decide with real numbers
+        in front of you, with no obligation to go further.
+      </p>
+      <p class="w3-text-grey">By phone or video call. In person if you're near Raleigh, NC.</p>
+    </div>
+
+    <!-- Storage tiers -->
+    <h3 class="w3-center"><b>Then, monthly storage</b></h3>
+    <p class="w3-center w3-text-grey" style="margin-bottom:24px;">Pick the size that fits. You can change it any time.</p>
+
+    <div class="w3-row-padding tier-row">
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-card w3-white w3-round-large w3-padding-32 w3-center price-card">
+          <div class="tier-badge"></div>
+          <h4><b>Starter</b></h4>
+          <div class="price-num w3-text-teal">$15</div>
+          <p class="w3-text-grey" style="margin-top:4px;">per month</p>
+          <hr>
+          <p class="w3-large"><b>250 GB</b></p>
+          <p class="w3-text-grey">A good fit for a modest collection.</p>
+        </div>
+      </div>
+
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-card w3-teal w3-round-large w3-padding-32 w3-center price-card">
+          <div class="tier-badge"><span class="w3-tag w3-white w3-text-teal w3-round">MOST FAMILIES</span></div>
+          <h4><b>Family</b></h4>
+          <div class="price-num">$35</div>
+          <p style="margin-top:4px;">per month</p>
+          <hr>
+          <p class="w3-large"><b>1 TB</b></p>
+          <p>Room for decades of home video.</p>
+        </div>
+      </div>
+
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-card w3-white w3-round-large w3-padding-32 w3-center price-card">
+          <div class="tier-badge"></div>
+          <h4><b>Archive</b></h4>
+          <div class="price-num w3-text-teal">$75</div>
+          <p class="w3-text-grey" style="margin-top:4px;">per month</p>
+          <hr>
+          <p class="w3-large"><b>3 TB</b></p>
+          <p class="w3-text-grey">For a really big library.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Extras -->
+    <div class="w3-white w3-round-large w3-padding-32 w3-margin-top">
+      <h4 class="w3-center"><b>If you ever need it</b></h4>
+      <ul class="w3-ul">
+        <li>
+          <b>Follow-up calls — $75.</b>
+          <span class="w3-text-grey">For existing clients. New device, new question, need a hand
+          with something — give me a call.</span>
+        </li>
+        <li>
+          <b>Editing projects — $250/hour.</b>
+          <span class="w3-text-grey">Want the good parts cut into something you can actually show
+          at a party? That's a project, and I do those too.</span>
+        </li>
+      </ul>
+    </div>
+
+    <p class="w3-center w3-text-grey w3-margin-top">
+      The one-time setup is priced per job — it depends on how much you have and what shape it's in.
+      You get that number in writing after the intro meeting.
+    </p>
+  </div>
+</section>
+
+<!-- Scope note -->
+<section class="w3-container w3-padding-48 w3-center">
+  <div class="wrap">
+    <p class="w3-large w3-text-grey">
+      This is for videos that are <b>already on a computer, phone, drive, or memory card</b>.
+      Still have old tapes or film reels? Those need to be converted first —
+      <a href="/digitize/">I do that separately</a>.
+    </p>
+  </div>
+</section>
+
+<!-- Lead form -->
+<section id="start" class="w3-container w3-padding-64 w3-light-grey">
+  <div class="wrap">
+    <h2 class="w3-center sec-h"><b>Tell me what you&#39;ve got</b></h2>
+    <p class="w3-center w3-large w3-text-grey" style="margin-bottom:32px;">
+      Fill this out and I'll get back to you. It costs nothing to ask, and there's no pressure.
+    </p>
+
+    <div class="w3-card w3-white w3-round-large w3-padding-32">
+      <form id="leadForm" action="https://api.web3forms.com/submit" method="POST">
+
+        <input type="hidden" name="access_key" value="d845e49b-6041-4222-8c7f-64d746902fdc">
+        <input type="hidden" name="subject" value="New Home Video Cloud lead from evanlmann.com">
+        <input type="hidden" name="from_name" value="evanlmann.com — Home Video Cloud">
+        <input type="hidden" name="service" value="Home Video Cloud">
+
+        <!-- Honeypot: hidden field bots tend to fill in -->
+        <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
+
+        <label class="w3-text-dark-grey"><b>Your name</b></label>
+        <input class="w3-input w3-border w3-margin-bottom" type="text" name="name" required>
+
+        <label class="w3-text-dark-grey"><b>Email</b></label>
+        <input class="w3-input w3-border w3-margin-bottom" type="email" name="email" required>
+
+        <label class="w3-text-dark-grey"><b>Phone</b></label>
+        <input class="w3-input w3-border w3-margin-bottom" type="tel" name="phone" required>
+
+        <label class="w3-text-dark-grey"><b>What do you have?</b></label>
+        <p class="w3-small w3-text-grey" style="margin:4px 0 8px;">
+          Don't worry about getting it right — a rough idea is plenty. For example:
+          "a few old hard drives and a laptop, mostly family vacations from the 90s."
+        </p>
+        <textarea class="w3-input w3-border w3-margin-bottom" name="message" rows="5" required></textarea>
+
+        <!-- hCaptcha (uses Web3Forms' built-in keys via their client script) -->
+        <div class="h-captcha w3-margin-bottom" data-captcha="true"></div>
+
+        <button type="submit" class="w3-button w3-teal w3-xlarge w3-round-large w3-padding-large">
+          <i class="fas fa-paper-plane"></i>&nbsp; Send
+        </button>
+      </form>
+
+      <div id="formResult" class="w3-panel w3-hide w3-margin-top"></div>
+
+      <p class="w3-text-grey w3-margin-top">
+        Rather just call or email?
+        <a href="tel:+19194341623">+1-919-434-1623</a> ·
+        <a href="mailto:evanmann92@gmail.com">evanmann92@gmail.com</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-black w3-center w3-padding-64">
+  <p>© <span class="yr">2026</span> Evan Mann | <a href="/">Home</a> · <a href="/contact/">Contact</a> · <a href="mailto:evanmann92@gmail.com">Email Me</a></p>
+</footer>
+
+<script>
+  document.querySelectorAll('.yr').forEach(function (e) { e.textContent = new Date().getFullYear(); });
+  function toggleNav() {
+    var x = document.getElementById('navDemo');
+    if (x.className.indexOf('w3-show') === -1) { x.className += ' w3-show'; }
+    else { x.className = x.className.replace(' w3-show', ''); }
+  }
+</script>
+
+<!-- Web3Forms client script: enables the hCaptcha widget above -->
+<script src="https://web3forms.com/client/script.js" async defer></script>
+
+<!-- Inline AJAX submit: shows success/error without a page reload.
+     Degrades to a normal POST (Web3Forms' own success page) if JS is disabled. -->
+<script>
+  const form = document.getElementById('leadForm');
+  const result = document.getElementById('formResult');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const submitBtn = form.querySelector('button[type="submit"]');
+
+    submitBtn.disabled = true;
+    result.className = 'w3-panel w3-pale-yellow w3-leftbar w3-border-yellow w3-margin-top';
+    result.innerHTML = 'Sending…';
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: data
+    })
+      .then(async (response) => {
+        const json = await response.json();
+        if (response.ok && json.success) {
+          result.className = 'w3-panel w3-pale-green w3-leftbar w3-border-green w3-margin-top';
+          result.innerHTML = 'Thanks — I got it. I\'ll be in touch soon.';
+          form.reset();
+        } else {
+          result.className = 'w3-panel w3-pale-red w3-leftbar w3-border-red w3-margin-top';
+          result.innerHTML = json.message || 'Something went wrong. Please email evanmann92@gmail.com.';
+        }
+      })
+      .catch(() => {
+        result.className = 'w3-panel w3-pale-red w3-leftbar w3-border-red w3-margin-top';
+        result.innerHTML = 'Network error. Please email evanmann92@gmail.com.';
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+      });
+  });
+</script>
+
+</body>
+</html>

@@ -17,7 +17,8 @@ A static HTML/CSS/JS site with no build step, served via **GitHub Pages** from t
 |------|------------|
 | `index.html` | Homepage — hero, About Me, link tiles |
 | `videos/` | Video reels (includes `sasvideos/` and `movieamonth/`) |
-| `digitize/` | Media digitization page |
+| `digitize/` | Media digitization page (hobby film lab — develop/scan Super 8, 35mm, tapes) |
+| `home-videos/` | **Home Video Cloud** — private hosting + organizing of home video, with lead form |
 | `contact/` | Contact / service-request form (Web3Forms) |
 | `therapup/` | The Rap Up |
 | `css/`, `img/` | Styles and images |
@@ -42,7 +43,9 @@ A static HTML/CSS/JS site with no build step, served via **GitHub Pages** from t
 - [x] Low-cost, native form-submission flow with spam protection — `/contact` uses
       [Web3Forms](https://web3forms.com) (free, no backend) with a honeypot + hCaptcha. Future
       upgrade path: a self-owned Cloudflare Worker + Turnstile + email API (e.g. Resend).
-- [ ] Advertise media consultant services
+- [x] Advertise media consultant services — `/home-videos/` (**Home Video Cloud**) is the flagship
+      service page: private hosting + organizing of home video, priced service tiers, and its own
+      Web3Forms lead form. Linked from the homepage.
 - [ ] **Video & Audio Automation Pipelines** — a flagship *professional* service page at
       `/pipelines/` (a distinct tier from the hobby-grade digitize/film pages). Pitch: programming
       apps to ingest, transcode, edit, and subtitle media **at scale** with open-source tooling,
@@ -57,7 +60,6 @@ A static HTML/CSS/JS site with no build step, served via **GitHub Pages** from t
       - *Key differentiator:* specializes in **open-source tooling** — not locked into the
         cost-prohibitive Adobe suite — while still having Adobe experience to draw on. Lead with
         this in the copy.
-- [ ] Revisit the unpublished "Back Up Media" draft (`digitize/index2.html`) — a private-cloud /
-      Jellyfin hosting landing page. Consolidate it into the site: give it a proper path + matching
-      nav/footer, wire its pricing CTAs to `/contact`, and fold it into the consultant-services story.
+- [ ] Delete the unpublished "Back Up Media" draft (`digitize/index2.html`) — superseded by
+      `/home-videos/`, which covers the same private-hosting idea as a proper service page.
 - [ ] Improve how the YouTube channel is showcased
