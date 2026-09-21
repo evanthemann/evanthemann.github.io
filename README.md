@@ -18,7 +18,7 @@ A static HTML/CSS/JS site with no build step, served via **GitHub Pages** from t
 | `index.html` | Homepage — hero, About Me, link tiles |
 | `videos/` | Video reels (includes `sasvideos/` and `movieamonth/`) |
 | `digitize/` | Media digitization page (hobby film lab — develop/scan Super 8, 35mm, tapes) |
-| `home-videos/` | **Home Video Cloud** — private hosting + organizing of home video, with lead form |
+| `home-videos/` | **Home Video Cloud** — private hosting for home video, with lead form |
 | `contact/` | Contact / service-request form (Web3Forms) |
 | `therapup/` | The Rap Up |
 | `css/`, `img/` | Styles and images |
@@ -44,7 +44,7 @@ A static HTML/CSS/JS site with no build step, served via **GitHub Pages** from t
       [Web3Forms](https://web3forms.com) (free, no backend) with a honeypot + hCaptcha. Future
       upgrade path: a self-owned Cloudflare Worker + Turnstile + email API (e.g. Resend).
 - [x] Advertise media consultant services — `/home-videos/` (**Home Video Cloud**) is the flagship
-      service page: private hosting + organizing of home video, with its own Web3Forms lead form.
+      service page: private hosting for home video, with its own Web3Forms lead form.
       Linked from the homepage. No prices published — the page routes pricing questions to the form.
 - [ ] **Video & Audio Automation Pipelines** — a flagship *professional* service page at
       `/pipelines/` (a distinct tier from the hobby-grade digitize/film pages). Pitch: programming
