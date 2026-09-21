@@ -30,15 +30,7 @@
     }
     .step { display: flex; gap: 22px; align-items: flex-start; margin-bottom: 34px; }
     .step h3 { margin: 4px 0 6px; }
-    .price-card { height: 100%; }
-    .price-num { font-size: 40px; font-weight: bold; line-height: 1.1; }
-    .tier-badge { min-height: 28px; margin-bottom: 8px; }
     .check { color: #009688; margin-right: 10px; }
-    @media (min-width: 601px) {
-      .tier-row { display: flex; align-items: stretch; }
-      .tier-row > .w3-third { display: flex; float: none; }
-      .tier-row > .w3-third > .price-card { width: 100%; }
-    }
     @media (max-width: 600px) {
       body { font-size: 17px; }
       .step { gap: 16px; }
@@ -167,90 +159,20 @@
 </section>
 
 <!-- Pricing -->
-<section id="pricing" class="w3-container w3-padding-64 w3-light-grey">
-  <div class="wrap-wide">
-    <h2 class="w3-center sec-h"><b>What it costs</b></h2>
-    <p class="w3-center w3-large w3-text-grey" style="margin-bottom:40px;">
-      No surprises. You'll know the full price before anything starts.
+<section id="pricing" class="w3-container w3-padding-64 w3-light-grey w3-center">
+  <div class="wrap">
+    <h2 class="sec-h"><b>What it costs</b></h2>
+    <p class="lede">
+      It depends on how much you have and what shape it's in — so I'd rather give you a real
+      number than a guess.
     </p>
-
-    <!-- Step 1: intro -->
-    <div class="w3-card w3-white w3-round-large w3-padding-32 w3-center" style="margin-bottom:48px;">
-      <p class="w3-large w3-text-grey" style="margin:0;">Start here</p>
-      <h3 style="margin:8px 0;"><b>Intro Meeting</b></h3>
-      <div class="price-num w3-text-teal">$200</div>
-      <p class="w3-text-grey" style="margin:4px 0 0;">a 30-minute call</p>
-      <p class="w3-large" style="max-width:620px;margin:16px auto 0;">
-        We spend half an hour going through what you've got and what you want. Afterward I send you
-        a written plan and a <b>fixed price</b> for the setup — so you can decide with real numbers
-        in front of you, with no obligation to go further.
-      </p>
-      <p class="w3-text-grey">By phone or video call. In person if you're near Raleigh, NC.</p>
-    </div>
-
-    <!-- Storage tiers -->
-    <h3 class="w3-center"><b>Then, monthly storage</b></h3>
-    <p class="w3-center w3-text-grey" style="margin-bottom:24px;">Pick the size that fits. You can change it any time.</p>
-
-    <div class="w3-row-padding tier-row">
-      <div class="w3-third w3-margin-bottom">
-        <div class="w3-card w3-white w3-round-large w3-padding-32 w3-center price-card">
-          <div class="tier-badge"></div>
-          <h4><b>Starter</b></h4>
-          <div class="price-num w3-text-teal">$15</div>
-          <p class="w3-text-grey" style="margin-top:4px;">per month</p>
-          <hr>
-          <p class="w3-large"><b>250 GB</b></p>
-          <p class="w3-text-grey">A good fit for a modest collection.</p>
-        </div>
-      </div>
-
-      <div class="w3-third w3-margin-bottom">
-        <div class="w3-card w3-teal w3-round-large w3-padding-32 w3-center price-card">
-          <div class="tier-badge"><span class="w3-tag w3-white w3-text-teal w3-round">MOST FAMILIES</span></div>
-          <h4><b>Family</b></h4>
-          <div class="price-num">$35</div>
-          <p style="margin-top:4px;">per month</p>
-          <hr>
-          <p class="w3-large"><b>1 TB</b></p>
-          <p>Room for decades of home video.</p>
-        </div>
-      </div>
-
-      <div class="w3-third w3-margin-bottom">
-        <div class="w3-card w3-white w3-round-large w3-padding-32 w3-center price-card">
-          <div class="tier-badge"></div>
-          <h4><b>Archive</b></h4>
-          <div class="price-num w3-text-teal">$75</div>
-          <p class="w3-text-grey" style="margin-top:4px;">per month</p>
-          <hr>
-          <p class="w3-large"><b>3 TB</b></p>
-          <p class="w3-text-grey">For a really big library.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Extras -->
-    <div class="w3-white w3-round-large w3-padding-32 w3-margin-top">
-      <h4 class="w3-center"><b>If you ever need it</b></h4>
-      <ul class="w3-ul">
-        <li>
-          <b>Follow-up calls — $75.</b>
-          <span class="w3-text-grey">For existing clients. New device, new question, need a hand
-          with something — give me a call.</span>
-        </li>
-        <li>
-          <b>Editing projects — $250/hour.</b>
-          <span class="w3-text-grey">Want the good parts cut into something you can actually show
-          at a party? That's a project, and I do those too.</span>
-        </li>
-      </ul>
-    </div>
-
-    <p class="w3-center w3-text-grey w3-margin-top">
-      The one-time setup is priced per job — it depends on how much you have and what shape it's in.
-      You get that number in writing after the intro meeting.
+    <p class="w3-large w3-text-grey">
+      We start with a short call. I'll go through what you've got, then send you a written plan
+      with a <b>fixed price</b> in it. No obligation, and nothing starts until you say so.
     </p>
+    <a href="#start" class="w3-button w3-teal w3-xlarge w3-round-large w3-margin-top w3-padding-large">
+      Contact Me for Pricing
+    </a>
   </div>
 </section>
 

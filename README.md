@@ -44,8 +44,8 @@ A static HTML/CSS/JS site with no build step, served via **GitHub Pages** from t
       [Web3Forms](https://web3forms.com) (free, no backend) with a honeypot + hCaptcha. Future
       upgrade path: a self-owned Cloudflare Worker + Turnstile + email API (e.g. Resend).
 - [x] Advertise media consultant services — `/home-videos/` (**Home Video Cloud**) is the flagship
-      service page: private hosting + organizing of home video, priced service tiers, and its own
-      Web3Forms lead form. Linked from the homepage.
+      service page: private hosting + organizing of home video, with its own Web3Forms lead form.
+      Linked from the homepage. No prices published — the page routes pricing questions to the form.
 - [ ] **Video & Audio Automation Pipelines** — a flagship *professional* service page at
       `/pipelines/` (a distinct tier from the hobby-grade digitize/film pages). Pitch: programming
       apps to ingest, transcode, edit, and subtitle media **at scale** with open-source tooling,

@@ -4,3 +4,8 @@
 
 # Private planning notes (not for the public site)
 note-for-claude.md
+
+# Unlaunched pricing page. Every committed file is served by GitHub Pages, so
+# keeping this untracked is what keeps it off the live site. To launch it:
+# delete this entry, then commit home-videos/pricing/.
+home-videos/pricing/
