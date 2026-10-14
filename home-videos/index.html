@@ -83,11 +83,22 @@
   <div class="wrap">
     <h2 class="w3-center sec-h w3-margin-bottom"><b>How it works</b></h2>
     <p class="w3-center w3-large w3-text-grey w3-margin-bottom" style="margin-bottom:48px;">
-      Three steps. I handle the technical parts.
+      Four steps. I handle the technical parts.
     </p>
 
     <div class="step">
       <div class="step-num">1</div>
+      <div>
+        <h3><b>We have a quick call.</b></h3>
+        <p>
+          What do you have, what is it on, and who do you want to be able to watch it?
+          Fifteen minutes is usually enough.
+        </p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">2</div>
       <div>
         <h3><b>You send me your videos.</b></h3>
         <p>
@@ -99,7 +110,7 @@
     </div>
 
     <div class="step">
-      <div class="step-num">2</div>
+      <div class="step-num">3</div>
       <div>
         <h3><b>I set it up so you can label and organize.</b></h3>
         <p>
@@ -112,7 +123,7 @@
     </div>
 
     <div class="step">
-      <div class="step-num">3</div>
+      <div class="step-num">4</div>
       <div>
         <h3><b>You open an app and watch.</b></h3>
         <p>
@@ -235,9 +246,8 @@
       <div id="formResult" class="w3-panel w3-hide w3-margin-top"></div>
 
       <p class="w3-text-grey w3-margin-top">
-        Rather just call or email?
-        <a href="tel:+19194341623">+1-919-434-1623</a> ·
-        <a href="mailto:evanmann92@gmail.com">evanmann92@gmail.com</a>
+        Rather just call?
+        <a href="tel:+19194341623">+1-919-434-1623</a>
       </p>
     </div>
   </div>
@@ -245,7 +255,7 @@
 
 <!-- Footer -->
 <footer class="w3-container w3-black w3-center w3-padding-64">
-  <p>© <span class="yr">2026</span> Evan Mann | <a href="/">Home</a> · <a href="/contact/">Contact</a> · <a href="mailto:evanmann92@gmail.com">Email Me</a></p>
+  <p>© <span class="yr">2026</span> Evan Mann | <a href="/">Home</a> · <a href="/contact/">Contact</a></p>
 </footer>
 
 <script>
@@ -288,12 +298,12 @@
           form.reset();
         } else {
           result.className = 'w3-panel w3-pale-red w3-leftbar w3-border-red w3-margin-top';
-          result.innerHTML = json.message || 'Something went wrong. Please email evanmann92@gmail.com.';
+          result.innerHTML = json.message || 'Something went wrong. Please try again in a minute.';
         }
       })
       .catch(() => {
         result.className = 'w3-panel w3-pale-red w3-leftbar w3-border-red w3-margin-top';
-        result.innerHTML = 'Network error. Please email evanmann92@gmail.com.';
+        result.innerHTML = 'Network error. Please check your connection and try again.';
       })
       .finally(() => {
         submitBtn.disabled = false;
