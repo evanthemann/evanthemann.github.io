@@ -271,16 +271,13 @@
 
       <div id="formResult" class="w3-panel w3-hide w3-margin-top"></div>
 
-      <p class="w3-text-grey w3-margin-top">
-        Rather just email? <a href="mailto:evanmann92@gmail.com">evanmann92@gmail.com</a>
-      </p>
     </div>
   </div>
 </section>
 
 <!-- Footer -->
 <footer class="w3-container w3-black w3-center w3-padding-64">
-  <p>© <span class="yr">2026</span> Evan Mann | <a href="/">Home</a> · <a href="/contact/">Contact</a> · <a href="mailto:evanmann92@gmail.com">Email Me</a></p>
+  <p>© <span class="yr">2026</span> Evan Mann | <a href="/">Home</a> · <a href="/contact/">Contact</a></p>
 </footer>
 
 <script>
@@ -329,12 +326,12 @@
           form.reset();
         } else {
           result.className = 'w3-panel w3-pale-red w3-leftbar w3-border-red w3-margin-top';
-          result.innerHTML = json.message || 'Something went wrong. Please email evanmann92@gmail.com.';
+          result.innerHTML = json.message || 'Something went wrong. Please try again in a minute.';
         }
       })
       .catch(() => {
         result.className = 'w3-panel w3-pale-red w3-leftbar w3-border-red w3-margin-top';
-        result.innerHTML = 'Network error. Please email evanmann92@gmail.com.';
+        result.innerHTML = 'Network error. Please check your connection and try again.';
       })
       .finally(() => {
         submitBtn.disabled = false;
