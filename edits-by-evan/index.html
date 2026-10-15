@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edits by Evan — Video Editing by Evan Mann</title>
+  <meta name="description" content="Send me a pile of footage, get back a video people actually watch. Good cuts and good audio — no gimmicky transitions, titles, or effects.">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { font-family: Roboto, Arial, sans-serif; font-size: 18px; line-height: 1.65; }
+    h1, h2, h3, h4 { line-height: 1.2; }
+    .hero-h { font-size: clamp(32px, 6.4vw, 60px); margin: 0; }
+    .hero-sub { font-size: clamp(18px, 3vw, 26px); }
+    .sec-h { font-size: clamp(26px, 4.4vw, 40px); }
+    .lede { font-size: clamp(18px, 2.6vw, 24px); }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+                  url('https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=2000&q=80') center center/cover no-repeat;
+      color: whitesmoke;
+    }
+    .wrap { max-width: 820px; margin: auto; }
+    .wrap-wide { max-width: 1100px; margin: auto; }
+    .step-num {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 54px; height: 54px; border-radius: 50%;
+      background: #009688; color: #fff; font-size: 26px; font-weight: bold;
+      flex: 0 0 54px;
+    }
+    .step { display: flex; gap: 22px; align-items: flex-start; margin-bottom: 34px; }
+    .step h3 { margin: 4px 0 6px; }
+    .check { color: #009688; margin-right: 10px; }
+    .nope  { color: #9e9e9e; margin-right: 10px; }
+    .pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
+    .pillar i { font-size: 30px; color: #009688; }
+    .video { position: relative; padding-top: 56.25%; }
+    .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; border-radius: 8px; }
+    .videos { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; }
+    @media (max-width: 600px) {
+      body { font-size: 17px; }
+      .step { gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a href="/" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="/blog/" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Blog</a>
+    <a href="/contact/" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-large w3-right w3-hide-medium w3-hide-large" onclick="toggleNav()" title="Toggle Navigation Menu">&#9776;</a>
+  </div>
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-medium w3-hide-large">
+    <a href="/blog/" class="w3-bar-item w3-button w3-padding-large">Blog</a>
+    <a href="/contact/" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+  </div>
+</div>
+
+<!-- Hero -->
+<header class="hero w3-container w3-center w3-padding-64" style="padding-top:120px;">
+  <div class="wrap w3-padding-32">
+    <p class="w3-large" style="letter-spacing:3px;text-transform:uppercase;opacity:.8;margin:0 0 12px;">Edits by Evan</p>
+    <h1 class="hero-h"><b>You shot it.<br>I'll cut it.</b></h1>
+    <p class="hero-sub w3-margin-top">Good cuts. Good audio.</p>
+    <a href="#start" class="w3-button w3-teal w3-xlarge w3-round-large w3-margin-top w3-padding-large">Tell Me About Your Video</a>
+  </div>
+</header>
+
+<!-- The hook -->
+<section class="w3-container w3-padding-64 w3-center">
+  <div class="wrap">
+    <h2 class="sec-h"><b>Sitting on hours of footage you'll never edit?</b></h2>
+    <p class="lede">
+      A fun trip. A birthday party. A bachelor party. It's all on a phone or a card somewhere.
+      You've been meaning to edit it, but just haven't gotten there.
+    </p>
+    <p class="w3-large w3-text-grey">
+      I can help. I'll find the moments that matter, cut out everything that doesn't, and give
+      you back a short video, usually 5–10 minutes.
+    </p>
+  </div>
+</section>
+
+<!-- Demo reel -->
+<!-- TODO(Evan): replace this section's video with the raw-vs-cut demo reel once it's made. -->
+<section class="w3-container w3-padding-64 w3-light-grey">
+  <div class="wrap-wide">
+    <h2 class="w3-center sec-h"><b>Recent cuts</b></h2>
+    <p class="w3-center w3-large w3-text-grey" style="margin-bottom:40px;">
+      Trip vlogs I shot and cut myself.
+    </p>
+    <div class="videos">
+      <div>
+        <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/KlLXrEoC0ho" title="Family trip to Fayetteville, WV" loading="lazy" allowfullscreen></iframe></div>
+        <p class="w3-center w3-text-grey">Family trip to Fayetteville, WV</p>
+      </div>
+      <div>
+        <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/Pou0dljDL5s" title="Treehouse 2 hours outside Raleigh, NC" loading="lazy" allowfullscreen></iframe></div>
+        <p class="w3-center w3-text-grey">Treehouse 2 hours outside Raleigh, NC</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- The two things -->
+<section class="w3-container w3-padding-64">
+  <div class="wrap">
+    <h2 class="w3-center sec-h" style="margin-bottom:40px;"><b>Two things, done well</b></h2>
+    <div class="pillars">
+      <div class="pillar">
+        <i class="fa-solid fa-scissors"></i>
+        <h3><b>Good cuts</b></h3>
+        <p>Pacing that keeps moving, and jokes that land. Hours become 5–10 good minutes.</p>
+      </div>
+      <div class="pillar">
+        <i class="fa-solid fa-volume-high"></i>
+        <h3><b>Good audio</b></h3>
+        <p>You have to hear it to enjoy it. I'll fix the audio, and if I can't, I'll add
+          subtitles.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="w3-container w3-padding-64 w3-light-grey">
+  <div class="wrap">
+    <h2 class="w3-center sec-h w3-margin-bottom"><b>How it works</b></h2>
+    <p class="w3-center w3-large w3-text-grey" style="margin-bottom:48px;">Four steps. You mostly just watch.</p>
+
+    <div class="step">
+      <div class="step-num">1</div>
+      <div>
+        <h3><b>We have a quick call.</b></h3>
+        <p>Who's it for, how long should it be, and what are the moments that have to be in it?
+          Fifteen minutes is usually enough.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">2</div>
+      <div>
+        <h3><b>Send me your footage.</b></h3>
+        <p>Share a folder online, or mail me the drive or the cards. Phones, GoPros, cameras —
+          whatever you shot on. You get everything back.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">3</div>
+      <div>
+        <h3><b>You watch the first cut.</b></h3>
+        <p>Tell me what you love and what you'd change. One round of changes is included.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">4</div>
+      <div>
+        <h3><b>You get the finished video.</b></h3>
+        <p>A high-quality MP4, ready to share or post. You also get the project file
+          (<a href="https://www.blender.org/" target="_blank" rel="noopener">Blender</a>, which is free),
+          so the edit is never locked away with me.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section id="pricing" class="w3-container w3-padding-64 w3-center">
+  <div class="wrap">
+    <h2 class="sec-h"><b>What it costs</b></h2>
+    <p class="lede"><b>Most projects run $500–1,500.</b></p>
+    <p class="lede">
+      It depends on how much footage you have and how long the finished video should be.
+    </p>
+    <p class="w3-large w3-text-grey">
+      Tell me what you've got and I'll send back a <b>fixed price</b>. No obligation, and nothing
+      starts until you say so.
+    </p>
+    <a href="#start" class="w3-button w3-teal w3-xlarge w3-round-large w3-margin-top w3-padding-large">
+      Get a Quote
+    </a>
+  </div>
+</section>
+
+<!-- Lead form -->
+<section id="start" class="w3-container w3-padding-64 w3-light-grey">
+  <div class="wrap">
+    <h2 class="w3-center sec-h"><b>Tell me about your footage</b></h2>
+    <p class="w3-center w3-large w3-text-grey" style="margin-bottom:32px;">
+      A rough idea is plenty. It costs nothing to ask.
+    </p>
+
+    <div class="w3-card w3-white w3-round-large w3-padding-32" style="padding-left:clamp(16px,5vw,40px);padding-right:clamp(16px,5vw,40px);">
+      <form id="leadForm" action="https://api.web3forms.com/submit" method="POST">
+
+        <input type="hidden" name="access_key" value="d845e49b-6041-4222-8c7f-64d746902fdc">
+        <input type="hidden" name="subject" value="New Edits by Evan lead from evanlmann.com">
+        <input type="hidden" name="from_name" value="evanlmann.com — Edits by Evan">
+        <input type="hidden" name="service" value="Edits by Evan">
+        <!-- Filled from the page URL's utm_* params so each lead email says where it came from -->
+        <input type="hidden" name="utm_source" value="">
+        <input type="hidden" name="utm_medium" value="">
+        <input type="hidden" name="utm_campaign" value="">
+
+        <!-- Honeypot: hidden field bots tend to fill in -->
+        <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off">
+
+        <label class="w3-text-dark-grey"><b>Your name</b></label>
+        <input class="w3-input w3-border w3-margin-bottom" type="text" name="name" required>
+
+        <label class="w3-text-dark-grey"><b>Email</b></label>
+        <input class="w3-input w3-border w3-margin-bottom" type="email" name="email" required>
+
+        <label class="w3-text-dark-grey"><b>What did you shoot?</b></label>
+        <p class="w3-small w3-text-grey" style="margin:4px 0 8px;">
+          For example: "about 3 hours of iPhone and GoPro from a week in Colorado, want a 10-minute
+          video for the family."
+        </p>
+        <textarea class="w3-input w3-border w3-margin-bottom" name="message" rows="5" required></textarea>
+
+        <label class="w3-text-dark-grey"><b>Any deadline?</b> <span class="w3-text-grey">(optional)</span></label>
+        <input class="w3-input w3-border w3-margin-bottom" type="text" name="deadline">
+
+        <label class="w3-text-dark-grey"><b>A video whose style you like?</b> <span class="w3-text-grey">(optional link)</span></label>
+        <input class="w3-input w3-border w3-margin-bottom" type="url" name="reference">
+
+        <!-- hCaptcha (uses Web3Forms' built-in keys via their client script) -->
+        <div class="h-captcha w3-margin-bottom" data-captcha="true"></div>
+
+        <button type="submit" class="w3-button w3-teal w3-xlarge w3-round-large w3-padding-large">
+          <i class="fas fa-paper-plane"></i>&nbsp; Send
+        </button>
+      </form>
+
+      <div id="formResult" class="w3-panel w3-hide w3-margin-top"></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-black w3-center w3-padding-64">
+  <p>© <span class="yr">2026</span> Evan Mann | <a href="/">Home</a> · <a href="/contact/">Contact</a></p>
+</footer>
+
+<script>
+  document.querySelectorAll('.yr').forEach(function (e) { e.textContent = new Date().getFullYear(); });
+  function toggleNav() {
+    var x = document.getElementById('navDemo');
+    if (x.className.indexOf('w3-show') === -1) { x.className += ' w3-show'; }
+    else { x.className = x.className.replace(' w3-show', ''); }
+  }
+  // Carry utm_* params from the URL into the form
+  var params = new URLSearchParams(location.search);
+  ['utm_source', 'utm_medium', 'utm_campaign'].forEach(function (k) {
+    var el = document.querySelector('input[name="' + k + '"]');
+    if (el && params.get(k)) el.value = params.get(k);
+  });
+</script>
+
+<!-- Web3Forms client script: enables the hCaptcha widget above -->
+<script src="https://web3forms.com/client/script.js" async defer></script>
+
+<!-- Inline AJAX submit: shows success/error without a page reload.
+     Degrades to a normal POST (Web3Forms' own success page) if JS is disabled. -->
+<script>
+  const form = document.getElementById('leadForm');
+  const result = document.getElementById('formResult');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const submitBtn = form.querySelector('button[type="submit"]');
+
+    submitBtn.disabled = true;
+    result.className = 'w3-panel w3-pale-yellow w3-leftbar w3-border-yellow w3-margin-top';
+    result.innerHTML = 'Sending…';
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: data
+    })
+      .then(async (response) => {
+        const json = await response.json();
+        if (response.ok && json.success) {
+          result.className = 'w3-panel w3-pale-green w3-leftbar w3-border-green w3-margin-top';
+          result.innerHTML = 'Thanks — I got it. I\'ll be in touch soon.';
+          form.reset();
+        } else {
+          result.className = 'w3-panel w3-pale-red w3-leftbar w3-border-red w3-margin-top';
+          result.innerHTML = json.message || 'Something went wrong. Please try again in a minute.';
+        }
+      })
+      .catch(() => {
+        result.className = 'w3-panel w3-pale-red w3-leftbar w3-border-red w3-margin-top';
+        result.innerHTML = 'Network error. Please check your connection and try again.';
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+      });
+  });
+</script>
+
+</body>
+</html>
